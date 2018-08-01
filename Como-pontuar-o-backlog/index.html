@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Como pontuar o backlog - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Indicadores-Ágeis/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Como-melhorar-a-comunicação-da-equipe/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#definicao-de-pronto">Definição de pronto</a></li>
+        <li class="main "><a href="#passo-1-tenha-em-maos-todas-as-historias-de-usuario-que-devem-ser-estimadas">Passo #1: Tenha em mãos todas as histórias de usuário que devem ser estimadas</a></li>
+        <li class="main "><a href="#passo-2-coloque-todas-as-historias-em-uma-mesa">Passo #2: Coloque todas as histórias em uma mesa</a></li>
+        <li class="main "><a href="#passo-3-escolha-qualquer-historia">Passo #3: Escolha qualquer história</a></li>
+        <li class="main "><a href="#passo-4-estime-por-esforco-relativo">Passo #4: Estime por esforço relativo</a></li>
+        <li class="main "><a href="#passo-5-pontue-as-historias">Passo #5: Pontue as histórias</a></li>
+        <li class="main "><a href="#fonte">Fonte</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="definicao-de-pronto">Definição de pronto</h2>
+<p align = "justify">Ao se fechar o backlog inicial para a segunda Release, onde é adotado as metodologias ágeis, um passo muito importante para a equipe se alinhar acerca da pontuação das história é definir o que é uma história pronta, nessa definição entram fatores principalmente em relação à métricas aceitáveis.</p>
+
+<p align = "justify">Após definir o que é uma história pronta, é possível seguir alguns passos para se conseguir pontuar todo esse backlog rapidamente e de maneira eficaz.</p>
+
+<h2 id="passo-1-tenha-em-maos-todas-as-historias-de-usuario-que-devem-ser-estimadas">Passo #1: Tenha em mãos todas as histórias de usuário que devem ser estimadas</h2>
+<p align = "justify">A primeira coisa a se fazer é levantar todas as histórias que deverão ser estimadas. Eu aconselho que elas estejam escritas em cartões, assim será mais fácil trabalhar com elas.</p>
+
+<p align = "justify">Você precisa considerar os épicos e temas (ou, qualquer outro nível de rompimento) também, como eles são itens de alto nível, normalmente se encontram na parte inferior do seu Product Backlog.</p>
+
+<h2 id="passo-2-coloque-todas-as-historias-em-uma-mesa">Passo #2: Coloque todas as histórias em uma mesa</h2>
+<p align = "justify">Após levantar todas as histórias que estavam estacionadas em seu Backlog, coloque elas em uma mesa para que possam ser movimentadas facilmente.</p>
+
+<p align = "justify">A mesa é legal, pois todos podem ficar em volta dela para discutir e confirmar a utilidade e prioridade de cada história de maneira mais fácil e eficaz.</p>
+
+<h2 id="passo-3-escolha-qualquer-historia">Passo #3: Escolha qualquer história</h2>
+<p align = "justify">Escolha qualquer história para começar, faça a equipe estimar o esforço dela em “pequena”, “média” ou “grande”.</p>
+
+<p align = "justify">Usar P, M ou G é uma forma simples e rápida para atribuir esforço em torno do trabalho nesse primeiro momento.</p>
+
+<p align = "justify">Para atribuir peso, faça o seguinte:</p>
+
+<ul>
+<li>Se for uma grande história (ou seja, a equipe acredita que aquela história irá demandar um esforço grande) a coloque em uma extremidade da mesa, lado esquerdo, por exemplo;</li>
+<li>Se for uma pequena história coloque na outra extremidade da mesa;</li>
+<li>Se for uma história média, coloque no meio.</li>
+</ul>
+<h2 id="passo-4-estime-por-esforco-relativo">Passo #4: Estime por esforço relativo</h2>
+<p align = "justify">Agora pegue uma 2° história e pergunte para a equipe se o esforço para faze-la é mais ou menos o mesmo da história que está na mesa.</p>
+
+<p align = "justify">Por exemplo, supondo que a 1° história foi considerada de tamanho G (grande), pergunte a equipe se o esforço para implementar essa 2° história selecionada é similar a 1° história que é do tamanho G.</p>
+
+<p align = "justify">Se a resposta for sim, a coloque sobre a mesa na mesma extremidade das cartas de esforço grande.</p>
+
+<p align = "justify">Usando esta técnica, é possível passar por 100 ou mais histórias de usuário dentro do Product Backlog e estimar o seu esforço relativo em menos de uma hora.</p>
+
+<h2 id="passo-5-pontue-as-historias">Passo #5: Pontue as histórias</h2>
+<p align = "justify">Agora, se você prefere utilizar Story Points, siga o que vou lhe explicar agora!</p>
+
+<p align = "justify">Pegue um grupo de histórias, pode ser o com esforço “pequeno” (P) que são, teoricamente, mais fáceis.</p>
+
+<p align = "justify">Junto com a equipe, comece dando a pontuação de 1 para todas daquele grupo, depois passe uma por uma e analise se a pontuação está coerente.</p>
+
+<p align = "justify">Por exemplo, se você avaliou a primeira história e deu 2 pontos para ela, a segunda você irá comparar com essa, se você perceber que a história atual é duas vezes mais trabalhosa, você dá a pontuação de 4 pontos para a mesma, se for três vezes mais trabalhosa você dá a pontuação de 6.</p>
+
+<h2 id="fonte">Fonte</h2>
+<p><a href="https://www.culturaagil.com.br/5-passos-para-estimar-seu-backlog-em-menos-de-1-hora/">Cultura ágil</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

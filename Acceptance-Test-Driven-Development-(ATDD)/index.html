@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Acceptance Test Driven Development (ATDD) - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Test-Driven-Development/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Refactoring/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#teste-de-aceitacao">Teste de Aceitação</a></li>
+            <li><a href="#definicao">Definição</a></li>
+            <li><a href="#boas-praticas-para-a-criacao-de-testes-de-aceitacao">Boas práticas para a criação de testes de aceitação</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="teste-de-aceitacao">Teste de Aceitação</h1>
+<h2 id="definicao">Definição</h2>
+<p><p align = "justify">Testes de aceitação são especificações para o comportamento desejado de um sistema. Esse tipo de teste consegue descrever, dada uma história de usuário, como o sistema deve se comportar de acordo com <i>inputs</i> e interações que o usuário tem com a aplicação e qual deve ser o resultado esperado. Esses testes são criados para avaliar a qualidade externa do que foi desenvolvido, ou seja, verificar se o software (ou as funcionalidades) está pronto e pode ser utilizado por usuários finais. Esse tipo de teste é idealmente implementado de acordo com a descrição do cliente/interessado no produto, que descreve situações de uso da aplicação pelo usuário que devem ser testadas.</p>
+<h2 id="boas-praticas-para-a-criacao-de-testes-de-aceitacao">Boas práticas para a criação de testes de aceitação</h2>
+<p><p align = "justify">É importante lembrar que o uso do termo <em>escrever o teste</em> não necessariamente está relacionado a implementação dele, mas sim à definição do que deve ser testado, quais são os aspectos relevantes do teste e ainda, qual deve ser o resultado esperado.</p>
+<ul>
+<li><strong>Pertence ao cliente</strong></li>
+</ul>
+<p align = "justify">O propósito principal dos testes de aceitação é especificar os critérios que irão confirmar que uma história de usuário está funcionando. Logo, a pessoa mais bem posicionada para escrevê-los é o cliente, que tem a maior compreensão do que o produto deve fazer para atender o usuário final.
+
++ **Devem ser escritos em conjunto**
+
+
+<p align = "justify">Mesmo que o maior interessado do produto esteja numa melhor posição para definir os testes de aceitação, a falta de conhecimento sobre o funcionamento da metodologia ágil, de histórias de usuário ou de testes em programação pode ser um problema se este escrever os testes sozinho. Por isso, a melhor forma de realizar essa tarefa é definir o que deve ser testado em conjunto, de maneira que toda a equipe se mantenha integrada e tenha noção do escopo de cada teste, além de aumentar a comunicação entre cliente e desenvolvedor.
+
++ **É sobre o _o que_, e não sobre o _como_**
+
+
+<p align = "justify">É importante perceber que os testes de aceitação devem focar em </i>onde está o valor para o usuário final</i>, ao invés de em como esse valor é adquirido. Ao escrever um teste de aceitação não se deve focar na implementação, mas sim nas ações que são feitas e os detalhes desnecessários devem ser omitidos.
+
++ **Deve ser de maneira que o cliente possa compreender**
+
+<p align = "justify">Como é recomendado que os testes sejam escritos em conjunto com o cliente, é fácil compreender que a descrição dos passos de cada teste deve ser feita em uma linguagem simples e fácil, de maneira que o cliente possa compreender o que será feito em cada um e quais são seus objetivos.
+
++ **Deve ser conciso, preciso e não ambíguo**
+
+<p align = "justify">Uma boa prática na realização dos testes de aceitação é manter a simplicidade na descrição dos passos. Não é necessário descrever quais telas precisam ser acessadas, quais botões são utilizados e outros fatores semelhantes - estes são passos da implementação. O ideal é reforçar apenas o objetivo real do teste, de maneira que a compreensão seja imediata.
+
+
+
+# Desenvolvimento Orientado a Teste de Aceitação (ATDD)
+
+## O que é?
+<p align = "justify"> <i>O Acceptance Test-Driven Development</i> (ATDD), ou "Desenvolvimento Orientado a Testes de Aceitação", é uma prática de obtenção de requisitos de forma colaborativa aplicada por equipes ágeis, onde exemplos concretos e testes automatizados são utilizados para especificar os requisitos, tornando-os mais claros, com o objetivo de criar especificações executáveis.Eles são gerados em sessões de criação do <i> backlog</i>  do produto, com a participação da equipe, <i> Product Owner</i> , além dos demais interessados.
+<p align = "justify">O ATDD é muito similar ao TDD, diferenciando-se deste último pelo fato de termos uma colaboração maior entre o desenvolvedor, analista de qualidade (<i> tester</i> ) e negócio (cliente/partes interessadas). Enquanto o teste unitário está intrinsicamente relacionado com o código, de um ângulo do desenvolvedor (visão interna), o teste de aceitação está voltado ao ponto de vista do usuário, uma visão externa ao sistema.
+
+## Ciclo do desenvolvimento da metodologia ATDD
+
+<p align = "justify">A imagem abaixo representa o ciclo do desenvolvimento orientado a testes de aceitação, composto por 4 passos para aplicá-lo que serão descritos a seguir, conforme Elisabeth Hendrickson.
+
+![](https://cdn.infoq.com/statics_s2_20161011-0321_4/resource/articles/atdd-passo-a-passo/pt/resources/image01.png)
+
+## Aplicando o ATDD
+   1. **Debater os requisitos**
+<p align = "justify">As histórias de usuário (<i>user story</i>) são refinadas em um workshop ou em uma reunião de preparação do backlog do produto  <a href="https://www.scrumalliance.org/community/articles/2011/march/how-to-hold-an-effective-backlog-grooming-session"> backlog grooming</a>, antes da reunião de planejamento da iteração/sprint. Em ambos os casos, os participantes são uma equipe multifuncional, o Product Owner e, algum outro interessado que potencialmente tem mais informações sobre as histórias.  
+<p align = "justify">Algumas perguntas devem ser feitas para elencar exemplos de utilização ou cenários de uso dessas histórias de usuário e, assim, entendermos melhor o que está sendo conversado, de tal forma que esses cenários possam ser escritos como testes.
+
+   2. **Refinar os testes de aceitação**
+<p align = "justify">O próximo passo é organizar os testes de aceitação em um formato requerido pelo framework de automação de testes.
+
+   3. **Implementar o código com TDD**
+<p align = "justify">O próximo passo é implementar a funcionalidade para fazer com que o teste de aceitação passe.  
+<p align = "justify">E, para tanto, o desenvolvimento deve iniciar pelos testes unitários, incluindo todas as condições propostas para as expectativas existentes.  
+<p align = "justify">Depois de codificados todos os testes unitários, eles são executados e passamos a uma fase para ajustar aqueles que estão falhando.
+
+   4. **Apresentar os resultados dos testes de aceitação**
+<p align = "justify"> Após os testes passarem com sucesso, a história é verificada pelo Product Owner, normalmente em uma reunião de Review/Showcase, onde ele poderá aprová-la ou não. O resultado pode levar à criação de uma nova história ou uma alteração nos testes existentes, a fim de contemplar novos cenários. Outra forma que também funciona bem, e não posterga a validação em uma reunião específica, é a validação de cada história (Review), imediatamente após ela ser desenvolvida pela equipe, de tal maneira que o Product Owner possa fazer isso com o desenvolvedor ou o par de desenvolvedores que a finalizaram.
+
+## Diferença entre ATDD e BDD
+<p align = "justify"> O <i>Behavior Driven Development</i> (BDD) ou “Desenvolvimento Guiado por Comportamento” é uma prática ágil que permite uma melhor comunicação entre desenvolvedores, analistas de qualidade, áreas de negócio e pessoas não-técnicas, durante um projeto de software, descrevendo um ciclo de iterações com saídas bem definidas e resultando na entrega de software testado e que funciona.
+
+<p align = "justify"> O BDD dá uma compreensão mais clara sobre o que o sistema deve fazer a partir da perspectiva de todas as partes interessadas, tanto desenvolvedores e analistas quanto de clientes e outros </i>stakeholders</i>. Portanto, ATDD e BDD tem como foco a definição do comportamento esperado do sistema com a participação de todos os interessados, a diferença é que o ATDD explicita o uso dos testes de aceitação enquanto o BDD não os exige, porém na prática do BDD os testes de aceitação são comumente usados.
+
+# Treinamento ATDD
+- Incluir descrição do treinamento/DOJO - passo a passo - etapas
+- Registrar os detalhes da dinâmica
+- Infraestrutura Necessária para a dinâmica
+- Código referência no projeto da disciplina (00-Disciplina)
+- Treinamento em, pelo menos 2 linguagens
+
+# Referências Bibliográficas
+* INFOQ BRASIL.Acceptance Test-Driven Development (ATDD), passo a passo. Disponível em:
+<https://www.infoq.com/br/articles/atdd-passo-a-passo>. Acesso em: 19 de out. 2016</div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

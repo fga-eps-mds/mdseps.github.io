@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Pair Programming - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Como-melhorar-a-comunicação-da-equipe/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Test-Driven-Development/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#programacao-pareada">Programação Pareada</a></li>
+        <li class="main "><a href="#programacao-pareada-remota">Programação Pareada Remota</a></li>
+        <li class="main "><a href="#boas-praticas-programacao-pareada">Boas práticas Programação Pareada</a></li>
+        <li class="main "><a href="#tipos-de-programacao-pareada">Tipos de Programação Pareada</a></li>
+            <li><a href="#especialista-x-especialista">Especialista x Especialista</a></li>
+            <li><a href="#principiante-x-principiante">Principiante x Principiante</a></li>
+            <li><a href="#especialista-x-principiante">Especialista x Principiante</a></li>
+        <li class="main "><a href="#treinamento-programacao-pareada">Treinamento Programação Pareada</a></li>
+        <li class="main "><a href="#referencias">Referências</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="programacao-pareada">Programação Pareada</h1>
+<p><img alt="Pair Programming" src="http://www.extremeprogramming.org/map/images/codesml.gif" /></p>
+<p align = "justify" >A Programação Pareada é uma das práticas do <i>Extreme Programming (XP)</i>, que sugere que o código seja sempre trabalhado em dupla em um mesmo computador, revezando quem está digitando. Assim, existem dois papéis nessa atividade, o piloto e o co-piloto. Os dois trabalham de forma análoga a pilotos e co-pilotos de aeronaves.</p>
+
+<p align = "justify" >O piloto é o responsável pela digitação do código, a sintaxe, e por deixar o seu parceiro ciente do que está fazendo, sempre explicando seu raciocínio durante a execução. 
+O co-piloto acompanha a elaboração do código, os testes que deverão passar, a próxima história a ser entregue, o tempo gasto na execução dos testes, o tempo decorrido desde o último <i>commit</i>, e a qualidade do código em geral.</p>
+
+<p align = "justify" >A ideia é que o pareamento ajude a disseminar o conhecimento entre o time de desenvolvimento, que a aplicação tenha menos <i>bugs</i> e que mais funcionalidades sejam acrescentadas num menor período de tempo, resultando em melhores projetos.</p>
+
+<h1 id="programacao-pareada-remota">Programação Pareada Remota</h1>
+<p><p align = "justify" >Pareamento remoto significa pareamento a distância. Esse tipo de pareamento é necessário quando os desenvolvedores não podem se encontrar pessoalmente.<br />
+Este pareamento é feito com o auxílio de ferramentas que permitem a comunicação e o compartilhamento de tela, como <i>hangouts</i> ou <i>skype</i>, ou em alguns sites que permitem várias programarem juntas.<br />
+A desvantagem desse pareamento é que o par pode perder o foco com facilidade já que a pressão do outro não é tão grande, o que pode acarretar em perda de produtividade.</p></p>
+<h1 id="boas-praticas-programacao-pareada">Boas práticas Programação Pareada</h1>
+<p><strong>Algumas práticas de pareamento altamente efetivos:</strong></p>
+<p><ul style="list-style-type:disc">
+  <li><p align = "justify" > <b>Proficiência</b>: Ter proficiência com a linguagem e com as ferramentas utilizadas é extremamente importante para um pareamento eficiente. Caso contrário, o rendimento não será muito alto pois um membro do par será apenas ouvinte e não conseguirá acompanhar e contribuir. </p></li>
+  <li><p align = "justify" > <b>Comunicação</b>: A dupla precisa ter uma comunicação efetiva. É necessário que ambos estejam cientes e de acordo com o que será feito, é válido utilizar ferramentas de BDD para definir claramente o que será feito. Além disso, o piloto tem que estar constantemente se comunicando sobre o que está fazendo e pensando com o copiloto. </p></li>
+  <li><p align = "justify" > <b>Autoconfiança</b>: É essencial ter autoconfiança nas suas habilidades, dessa forma cada membro conseguirá contribuir e aprender bastante, criticando, recebendo críticas, questionando práticas e sugerindo novas ideias. </p></li>
+  <li><p align = "justify" > <b>Autocontrole</b>: Ter autocontrole para evitar distrações durante o pareamento e não se irritar ou se frustar com algo que não está dando certo contribui fortemente para a eficiência do par. Estabelecer algumas regras, como não usar celular para email ou mensagens que não vão contribuir é extremamente válido. </p></li>
+  <li><p align = "justify" > <b>Paciência</b>: Ter paciência com o outro membro do par quando este não tem tanto controle das ferramentas do computador é de grande ajuda para que ambos tenham confiança e vontade de trabalhar. </p></li>
+  <li><p align = "justify" > <b>Modos</b>: Estabelecer algumas regras para que o pareamento seja eficiente é extremamente importante. Regras como: trocar a função de cada um na dupla(piloto e copiloto) a cada intervalo de tempo pré-estabelecido, não ler emails ou mensagens no celular, não tocar na tela, não usar palavras ofensivas ou xingamentos, entre outros. </p></li>
+  <li><p align = "justify" > <b>Higiene</b>: Apesar de não parecer essa prática é importante. Maus hábitos de higiene pode deixar a outra pessoa extremamente desconfortável e fazer com que ela não queira parear. Ter práticas básicas de higiene pessoal e no ambiente de trabalho é essencial. </p></li>
+</ul> </p>
+<h1 id="tipos-de-programacao-pareada">Tipos de Programação Pareada</h1>
+<h2 id="especialista-x-especialista">Especialista x Especialista</h2>
+<p align = "justify" >Tipo de pareamento que a princípio parece ser o melhor, contudo, geralmente traz poucas inovações, já que especialistas já estão acostumados com as estruturas e paradigmas pré-definidos e tendem a não questioná-los.</p>
+
+<h2 id="principiante-x-principiante">Principiante x Principiante</h2>
+<p align = "justify" >Tipo de pareamento que traz melhores resultados que um principiante trabalhando sozinho, contudo, a curva de aprendizagem e de produção deste tipo é bem lenta, sendo ele desencorajado.</p>
+
+<h2 id="especialista-x-principiante">Especialista x Principiante</h2>
+<p align = "justify" >Tipo de pareamento mais recomendado, de modo que a curva de aprendizado do principiante tem crescimento rápido, além de que, o desconhecimento do principiante de estruturas e paradigmas pré-definidos o faz questioná-los, podendo gerar novas ideias e inovações. Contudo, para que este pareamento funcione adequadamente, o especialista precisa ter paciência e vontade de ensinar o principiante, bem como é requerida proatividade deste último, para que o primeiro não faça tudo sozinho.</p>
+
+<h1 id="treinamento-programacao-pareada">Treinamento Programação Pareada</h1>
+<ul>
+<li>Incluir descrição do treinamento/DOJO - passo a passo - etapas</li>
+<li>Registrar os detalhes da dinâmica</li>
+<li>Infraestrutura Necessária para a dinâmica</li>
+<li>Código referência no projeto da disciplina (00-Disciplina)</li>
+<li>Treinamento em, pelo menos 2 linguagens</li>
+</ul>
+<h1 id="referencias">Referências</h1>
+<p><a href="http://www.desenvolvimentoagil.com.br/xp/praticas/programacao_par">Programação em par</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

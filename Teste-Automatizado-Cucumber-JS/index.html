@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Teste Automatizado Cucumber JS - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../REST-API-em-Node.js-e-RethinkDB/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Teste-Automatizado-Cucumber-Rails/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bdd-com-o-cucumber-em-javascript">BDD com o cucumber em JavaScript</a></li>
+            <li><a href="#objetivo">Objetivo</a></li>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#objetivo-do-teste">Objetivo do teste</a></li>
+            <li><a href="#instalacao">Instalação</a></li>
+            <li><a href="#configuracao-dos-testes">Configuração dos testes</a></li>
+            <li><a href="#testes">Testes</a></li>
+            <li><a href="#executando">Executando</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="bdd-com-o-cucumber-em-javascript">BDD com o cucumber em JavaScript</h1>
+<h2 id="objetivo">Objetivo</h2>
+<p>Este documento tem como objetivo principal criar um tutorial básico sobre o cucumberJS, ferramenta feita para desenvolvimento utilizando BDD (<em>Behaviour Driven Development</em>) em javascript.</p>
+<h2 id="introducao">Introdução</h2>
+<p align="justify"> Controlar se todos os critérios de aceitação de um sistema foram cumpridos nem sempre é uma tarefa fácil, e para simplificar esta tarefa, o BDD foi criado.
+Neste tipo de teste o sistema é testado como um todo, sem considerar diferenças entre servidor e cliente, ou até mesmo banco de dados, garantindo assim que a funcionalidade como um todo funciona, porém nunca garantindo que ao encontrar um erro, torne mais fácil o <i>debug</i>.</p>
+
+<h2 id="objetivo-do-teste">Objetivo do teste</h2>
+<p>O teste de exemplo para este tutorial será a funcionalidade do google de busca por um nome, sendo o caso de teste a busca da frase GPP/MDS e verificar se o github da disciplina é apresentado</p>
+<h2 id="instalacao">Instalação</h2>
+<h3 id="pre-requisitos">Pré requisitos:</h3>
+<ul>
+<li>npm</li>
+</ul>
+<h3 id="preparacao-do-teste">Preparação do teste</h3>
+<p><code>npm init</code></p>
+<p>Serão apresentadas várias perguntas, aperte enter em todas =D.</p>
+<p><code>npm install --save-dev cucumber cucumberjs-chromedriver selenium-webdriver</code>
+<code>npm install -g gulp</code></p>
+<h2 id="configuracao-dos-testes">Configuração dos testes</h2>
+<h3 id="estrutura-de-arquivos">Estrutura de arquivos</h3>
+<p>Os arquivos devem estar disponibilizados da seguinte forma:</p>
+<p>raiz<br>
+|- package.json
+|- gulpfile.js
+|- tests<br>
+<strong><em>_</em>|- features <br>
+</strong><strong><em>_</em></strong><strong>|-<files>.feature<br>
+<strong><em>_</em></strong><strong><em>_|-step</em>definitions<br>
+</strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_|-\<file\>_steps_.js<br>
+</em></strong><strong><em>_</em></strong>_|-support<br>
+<strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em>_|-env.js<br>
+</strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_|-hook.js<br>
+</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></strong>_|-world.js<br></p>
+<h4 id="gulpfilejs">Gulpfile.js</h4>
+<pre><code>var gulp = require('gulp');
+var runSequence = require('run-sequence').use(gulp);
+var cucumber = require('gulp-cucumber');
+
+gulp.task('cucumber', function() {
+
+  var file = "*";
+  if (process.argv.length &gt;= 4) {
+    file = process.argv[3].replace(/-+/, "");
+  }
+
+  return gulp.src('./tests/features/' + file).pipe(cucumber({
+    'steps': './tests/features/step_definitions/commom_steps.js',
+    'support': './tests/features/support/*.js'
+  }))
+})
+</code></pre>
+<h3 id="envjs">Env.js</h3>
+<pre><code>'use strict';
+
+var configure = function() {
+  this.setDefaultTimeout(60 * 1000);
+};
+
+module.exports = configure;
+</code></pre>
+<h3 id="hooksjs">Hooks.js</h3>
+<pre><code>'use strict';
+
+var driver = require('./world.js').getDriver();
+var fs = require('fs');
+var path = require('path');
+var sanitize = require("sanitize-filename");
+
+var myHooks = function() {
+
+  this.After(function(scenario) {
+    if (scenario.isFailed()) {
+      this.driver.takeScreenshot().then(function(data) {
+        var base64Data = data.replace(/^data:image\/png;base64,/, "");
+        fs.writeFile(path.join('screenshots', sanitize(scenario.getName() + ".png").replace(/ /g, "_")), base64Data, 'base64', function(err) {
+          if (err) console.log(err);
+        });
+      });
+    }
+    return this.driver.manage().deleteAllCookies();
+  });
+
+  this.registerHandler('AfterFeatures', function(event) {
+    return driver.quit();
+  });
+
+};
+
+module.exports = myHooks;
+</code></pre>
+<h3 id="worldjs">World.js</h3>
+<pre><code>'use strict';
+
+var fs = require('fs');
+var webdriver = require('selenium-webdriver');
+var platform = process.env.PLATFORM || "CHROME";
+var until = webdriver.until;
+
+var buildChromeDriver = function() {
+  return new webdriver.Builder().
+  withCapabilities(webdriver.Capabilities.chrome()).
+  build();
+};
+
+var buildFirefoxDriver = function() {
+  return new webdriver.Builder().
+  withCapabilities(webdriver.Capabilities.firefox()).
+  build();
+};
+
+switch (platform) {
+  case 'FIREFOX':
+    var driver = buildFirefoxDriver();
+    break;
+  default:
+    var driver = buildChromeDriver();
+}
+
+var getDriver = function() {
+  return driver;
+};
+
+var World = function World() {
+
+  var defaultTimeout = 5000;
+  var screenshotPath = "screenshots";
+
+  this.webdriver = webdriver;
+  this.driver = driver;
+
+  if (!fs.existsSync(screenshotPath)) {
+    fs.mkdirSync(screenshotPath);
+  }
+
+  this.waitForCss = function(cssLocator, timeout) {
+    var waitTimeout = timeout || defaultTimeout;
+    return driver.wait(until.elementLocated({
+      css: cssLocator
+    }), waitTimeout);
+  };
+
+  this.waitForXpath = function(xpath, timeout) {
+    var waitTimeout = timeout || defaultTimeout;
+
+    return driver.wait(
+      until.elementLocated(
+        webdriver.By.xpath(xpath)), waitTimeout
+    );
+  }
+
+  this.waitForTagName = function(tagName, timeout) {
+    var waitTimeout = timeout || defaultTimeout;
+
+    return driver.wait(
+      until.elementLocated(
+        webdriver.By.tagName(tagName)), waitTimeout
+    );
+  };
+
+  this.waitForTagNames = function(tagName, timeout) {
+    var waitTimeout = timeout || defaultTimeout;
+
+    return driver.wait(
+      driver.findElements(webdriver.By.tagName(tagName), waitTimeout)
+    );
+  }
+
+  this.waitForId = function(idLocator, timeout) {
+    var waitTimeout = timeout || defaultTimeout;
+    return driver.wait(until.elementLocated({
+      id: idLocator
+    }), waitTimeout);
+  };
+
+  this.type = function(id, word) {
+    return driver.findElement({
+        id: id
+      })
+      .sendKeys(word);
+  }
+
+  this.click = function(id) {
+    return driver.wait(until.elementLocated({
+      id: id
+    }), defaultTimeout).then(function(response) {
+      return response.click();
+    })
+  }
+
+};
+
+module.exports.World = World;
+module.exports.getDriver = getDriver;
+</code></pre>
+<h2 id="testes">Testes</h2>
+<p>Finalmente com todos os testes prontos configurados, podemos começar a desenvolver os cases de testes, os quais se encontram nos arquivos .feature.</p>
+<h3 id="gpp_mdsfeature">gpp_mds.feature</h3>
+<pre><code>Feature: Search google feature
+  In order to see if the company in github is big
+  As a student
+  I want be able to find it on google
+
+Scenario: Found it
+  Given I am in googles page
+  When I type gppmds
+  When I click search button
+  Then I should see https://github.com/fga-gpp-mds
+</code></pre>
+<h3 id="commom_stepsjs">Commom_steps.js</h3>
+<p>Agora é necessário desenvolver os steps, para que o cucumberJS possa identificar qual a tarefa que deve ser realizada a cada linha do <em>Scenario</em>.</p>
+<pre><code>var expect = require('chai').expect;
+var webdriver = require('selenium-webdriver')
+var until = webdriver.until;
+
+var commom_steps = function() {
+  this.World = require('../support/world.js').World;
+
+  /****************************************************************************
+   ********************************* GIVEN *************************************
+   ****************************************************************************/
+  this.Given(/^I am in googles page$/, function() {
+    return this.driver.get('https://www.google.com');
+  });
+
+  /****************************************************************************
+   ********************************* WHEN **************************************
+   ****************************************************************************/
+  this.When(/^I type (.+)$/, function(word) {
+    var type = this.type;
+    return this.waitForId('lst-ib').then(function(response) {
+      type('lst-ib', word);
+    })
+  });
+
+  /****************************************************************************
+   ********************************* THEN *************************************
+   ****************************************************************************/
+  this.Then(/I should see (.+)$/, function(text) {
+    var driver = this.driver;
+
+    return driver.sleep(1000).then(function() {
+      return driver.findElement(webdriver.By.tagName("body")).getAttribute("innerHTML").then(function(html) {
+        if (html.lastIndexOf(text) &gt; 0) {
+          // nothing to do.
+        } else {
+          throw (new Error("Texto " + text + " esperado porém não encontrado"));
+        }
+      })
+    });
+  });
+};
+
+module.exports = commom_steps;
+</code></pre>
+<h2 id="executando">Executando</h2>
+<p>Finalmente poderemos executar nossos testes, e para isso é só executar o comando:</p>
+<p><code>gulp cucumber</code></p>
+<p>Então o CucumberJS irá entrar na pasta e executar todas as features marcadas =D</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

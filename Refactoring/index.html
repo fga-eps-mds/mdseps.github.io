@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Refactoring - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Acceptance-Test-Driven-Development-(ATDD)/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Integração-Contínua/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#refatoracao">Refatoração</a></li>
+        <li class="main "><a href="#o-que-nao-e-refatoracao">O que não é Refatoração</a></li>
+        <li class="main "><a href="#quando-a-refatoracao-e-necessaria">Quando a refatoração é necessária?</a></li>
+            <li><a href="#para-se-encontrar-um-bug-no-codigo">Para se encontrar um bug no código</a></li>
+            <li><a href="#ao-se-adicionar-uma-nova-funcionalidade">Ao se adicionar uma nova funcionalidade</a></li>
+            <li><a href="#durante-a-visao-de-codigo">Durante a visão de código</a></li>
+            <li><a href="#qualquer-hora">Qualquer hora</a></li>
+        <li class="main "><a href="#para-que-utilizar-a-refatoracao">Para quê utilizar a refatoração?</a></li>
+        <li class="main "><a href="#bad-smells-in-code-mal-cheiro-de-codigo">Bad Smells in code (mal cheiro de código)</a></li>
+        <li class="main "><a href="#identificando-mal-cheiro-de-codigo-metricas-de-codigo-fonte">Identificando mal cheiro de código - métricas de código fonte</a></li>
+        <li class="main "><a href="#exemplo-de-refatoracao">Exemplo de Refatoração</a></li>
+            <li><a href="#ferramentas-das-metricas">Ferramentas das métricas</a></li>
+        <li class="main "><a href="#relacao-entre-testes-e-refatoracao">Relação entre Testes e Refatoração</a></li>
+            <li><a href="#refatoracao-e-testes">Refatoração e Testes</a></li>
+            <li><a href="#refatoracao-e-tdd">Refatoração e TDD</a></li>
+        <li class="main "><a href="#tipos-de-refatoracao">Tipos de Refatoração</a></li>
+        <li class="main "><a href="#treinamento">Treinamento</a></li>
+        <li class="main "><a href="#referencias">Referências</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><a href="https://labs.spotify.com/2014/04/11/qualities-of-quality/"> Qualities of Quality</a></p>
+<p>Dívidas técnicas:
+https://www.youtube.com/watch?v=pqeJFYwnkjE</p>
+<hr />
+<h1 id="refatoracao">Refatoração</h1>
+<p align="justify"> A refatoração é um processo de reorganização da estrutura interna do software, sem alterar o seu comportamento externo. É um modo disciplinado de reorganizar código, facilitando a posterior depuração, eliminando código presumível de introduzir erros. De modo geral, quando se refabrica o código, melhora-se o desenho e a estruturação deste.</p>
+
+<h1 id="o-que-nao-e-refatoracao">O que não é Refatoração</h1>
+<ul>
+<li>Encontrar e arrumar bugs enquanto faz o código, de maneira que essa ação é considerada apenas como melhoria de código.</li>
+<li>Intensificar o tratamento de erros, que também é considerado apenas como melhoria da cobertura de código.</li>
+<li>Código defensivo, de maneira que erros aplicação sejam raros.</li>
+<li>Tornar o código mais testável.</li>
+</ul>
+<p>Em resumo, melhoria de cobertura e tratamento de erros não é considerado como refatoração de código.</p>
+<h1 id="quando-a-refatoracao-e-necessaria">Quando a refatoração é necessária?</h1>
+<h2 id="para-se-encontrar-um-bug-no-codigo">Para se encontrar um bug no código</h2>
+<p><p align="justify"> Bugs são como baratas: se escondendo nos lugares mais escuros e sujos do código. Desta forma, a limpeza do código vai tornar evidente os possíveis bugs.</p></p>
+<h2 id="ao-se-adicionar-uma-nova-funcionalidade">Ao se adicionar uma nova funcionalidade</h2>
+<p><p align="justify"> Ao se adicionar uma nova funcionalidade é necessário refatorar o código para um melhor entendimento do código e para que os bugs fiquem mais visíveis, pois um código desnecessariamente complexo dificulta a visualização de problemas.</p></p>
+<h2 id="durante-a-visao-de-codigo">Durante a visão de código</h2>
+<p><p align="justify"> A revisão de código é sempre um bom momento para a refatoração, pois pode ser o último momento antes do código/software estar disponível para o público.</p></p>
+<p align="justify"> A melhor forma de revisar o código é em conjunto com o autor do código, pois pode-se decidir formas e técnicas de refatoração sem prejudicar as funcionalidades. As mudanças podem ser feita diretas ao ponto.</p>
+
+<h2 id="qualquer-hora">Qualquer hora</h2>
+<p>De tempos em tempos o código precisa ser revisado para refatoração, de forma que fique mais limpo.</p>
+<h1 id="para-que-utilizar-a-refatoracao">Para quê utilizar a refatoração?</h1>
+<ul>
+<li>Eliminação de código duplicado, fazendo com que a repetição de código seja nivelada ao mínimo possível.</li>
+<li>Elimanação de código morto, excluindo linhas de código que não acrescentam nada à aplicação.</li>
+<li>Melhorar a lógica utilizada no sistema, de maneira que o design seja mais claro para programadores de fora.</li>
+<li>Melhorar o uso da linguagem, otimizando o desempenho.</li>
+</ul>
+<h1 id="bad-smells-in-code-mal-cheiro-de-codigo">Bad Smells in code (mal cheiro de código)</h1>
+<p>Bad smell é uma situação na qual a estrutura do programa pode ser melhorada com refatoração, como por exemplo: Duplicação de código e classe ou métodos longos.</p>
+<h1 id="identificando-mal-cheiro-de-codigo-metricas-de-codigo-fonte">Identificando mal cheiro de código - métricas de código fonte</h1>
+<p align="justify"> Existem vários indicativos de bad smells, abaixo deixo algumas definições desses bad smells bem como a refatoração sugerida:</p>
+
+<ul>
+<li>
+<p><strong>Long Method/ God Method:</strong> 
+<p align="justify"> São métodos que centralizam a funcionalidade da classe e que, geralmente, são difíceis de entender e de manter.
+Para melhorar esses métodos pode-se dividir o método em dois ou transformar o método em uma classe.</p></p>
+</li>
+<li>
+<p><strong>Feature Envy:</strong> 
+<p align="justify"> Acontece quando uma parte do código de uma classe "inveja" outra classe, por exemplo quando um método de uma classe usa atributos somente de outra classe.
+Para refatorar pode-se mover os métodos e atributos entre classes ou juntar duas classes em uma.</p></p>
+</li>
+<li>
+<p><strong>Divergent Change:</strong>
+<p align="justify"> Ocorre quando uma classe pode mudar frequentemente de diferentes formas e por razões distintas.
+Como refatoração pode-se dividir a classe em duas.</p></p>
+</li>
+<li>
+<p><strong>Shotgun Surgery:</strong> 
+<p align="justify"> Oposto do Divergent Change acima, pois toda vez que uma classe for alterada, são necessárias várias pequenas mudanças em outras classes diferentes.
+Como refatoração pode se mover métodos e atributos entre as classes e juntar duas classes em uma.</p></p>
+</li>
+<li>
+<p><strong>Refused Bequest:</strong> 
+<p align="justify"> Ocorre quando uma classe herda atributos e métodos de outra classe, mas não os usa.
+Como refatoração propõe-se mover o método ou atributo da superclasse para a subclasse e substituir o relacionamento de herança por associação.</p></p>
+</li>
+<li>
+<p><strong>Comments:</strong> 
+<p align="justify"> Os comentários não são ruins, porém quando em excesso podem indicar que os nomes de métodos/atributos não estão suficientemente expressivos.
+Pode-se quebrar um método em dois ou renomear.</p></p>
+</li>
+</ul>
+<h1 id="exemplo-de-refatoracao">Exemplo de Refatoração</h1>
+<p>A refatoração deve resultar em um código mais limpo, que seja legível, claro e com o mínimo de repetições. Na imagem abaixo podemos fazer uma analogia a refatoração:</p>
+<p><img alt="" src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/00-Disciplina/img/refatoracao-casa.png" /></p>
+<p align="justify"> Esta imagem retrata uma cozinha em duas situações distintas. Na esquerda, vemos uma cozinha em situação caótica, onde preparar alimentos, lavar e encontrar utensílios, que são o objetivo principal da cozinha, se tornaram tarefas difíceis. Já na direita, vemos uma cozinha limpa e organizada, onde pode-se realizar as mesmas tarefas da anterior, porém com muito mais facilidade.</p>
+
+<p align="justify"> A refatoração deve funcionar desta mesma forma: fazer com que um código inadequado se torne limpo, facilitando seu entendimento, e tornando a detecção de bugs mais simples. A refatoração não pode alterar o comportamento do código.</p>
+
+<h2 id="ferramentas-das-metricas">Ferramentas das métricas</h2>
+<h1 id="relacao-entre-testes-e-refatoracao">Relação entre Testes e Refatoração</h1>
+<h2 id="refatoracao-e-testes">Refatoração e Testes</h2>
+<p><p align="justify"> Os testes estão intrinsecamente relacionados à refatoração. Como a refatoração não pode alterar o funcionamento do código, os testes são a perfeita ferramenta para garantir o funcionamento correto do código <b>antes e depois</b> da refatoração.</p></p>
+<h2 id="refatoracao-e-tdd">Refatoração e TDD</h2>
+<p><p align="justify"> O TDD também está relacionado à refatoração, pois a refatoração dos testes é parte básica do ciclo de desenvolvimento direcionado à testes. Pode-se entender essa relação através da figura abaixo:</p></p>
+<p><img alt="" src="https://github.com/fga-gpp-mds/00-Disciplina/wiki/img/tdd.png" /></p>
+<h1 id="tipos-de-refatoracao">Tipos de Refatoração</h1>
+<h1 id="treinamento">Treinamento</h1>
+<ul>
+<li>Incluir descrição do treinamento/DOJO - passo a passo - etapas</li>
+<li>Registrar os detalhes da dinâmica</li>
+<li>Infraestrutura Necessária para a dinâmica</li>
+<li>Código referência no projeto da disciplina (00-Disciplina)</li>
+<li>Treinamento em, pelo menos 2 linguagens</li>
+</ul>
+<h1 id="referencias">Referências</h1>
+<p><a href="http://paginas.fe.up.pt/~ei02017/docs/relatorio_es.pdf"> Engenharia de software. Refactoring.</a></p>
+<p>Ian Sommerville. Engenharia de Software, 9ª Edição. Pearson Education, 2011.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

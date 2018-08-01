@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Fase Elaboração (RUP.md Planejamento(PMBOK) - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../01---Fase-Iniciação/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#fase-de-elaboracao-rup-planejamento-pmbok">Fase de Elaboração (RUP)/ Planejamento (PMBok)</a></li>
+            <li><a href="#fase-de-elaboracao-rup">Fase de Elaboração (RUP)</a></li>
+            <li><a href="#planejamento-pmbok">Planejamento (PMBok)</a></li>
+            <li><a href="#quais-os-processos-do-pmbok-sao-executados-ilustre">Quais os processos do PMBok são executados - ilustre</a></li>
+            <li><a href="#gpp-como-construir-uma-eap-estrutura-analitica-de-projeto-tutorial">(GPP) Como construir uma EAP (Estrutura analítica de Projeto) - Tutorial</a></li>
+            <li><a href="#quais-os-processos-do-rup-sao-executados-ilustre">Quais os processos do RUP são executados - ilustre</a></li>
+            <li><a href="#detalhe-as-atividades-realizadas-por-mds-nessa-fase">Detalhe as atividades realizadas por MDS nessa fase</a></li>
+            <li><a href="#quais-as-disciplinas-no-rup-sao-executadas">Quais as disciplinas no RUP são executadas</a></li>
+            <li><a href="#quais-os-artefatos-sao-gerados-do-rup">Quais os artefatos são gerados do RUP?</a></li>
+            <li><a href="#quais-os-templates-usados-para-gerar-os-artefatos-do-pmbok">Quais os templates usados para gerar os artefatos do PMbok</a></li>
+            <li><a href="#quais-os-templates-usados-para-gerar-os-artefatos-do-rup">Quais os templates usados para gerar os artefatos do RUP?</a></li>
+            <li><a href="#quais-os-papeis-desempenhados-por-gpp-nessa-fase-descreva">Quais os papéis desempenhados por GPP nessa fase? - descreva</a></li>
+            <li><a href="#quais-os-papeis-desempenhados-por-mds-nessa-fase-descreva">Quais os papéis desempenhados por MDS nessa fase? descreva</a></li>
+            <li><a href="#quais-sao-principais-criterios-de-avaliacao-para-passagem-de-fase-rup">Quais são principais critérios de avaliação para passagem de fase? (RUP)</a></li>
+            <li><a href="#quais-sao-principais-criterios-de-avaliacao-para-passagem-de-fase-pmbok">Quais são principais critérios de avaliação para passagem de fase? (PMBOK)</a></li>
+            <li><a href="#referencias">Referências</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Descrever a fase de elaboração/Planejamento do projeto GPP/MDS.</p>
+<h1 id="fase-de-elaboracao-rup-planejamento-pmbok">Fase de Elaboração (RUP)/ Planejamento (PMBok)</h1>
+<p align="justify">Em um mapeamento direto das fases do RUP com relação aos grupos do PMBok, nota-se que ambos são equivalentes, como é observado no caso da fase de elaboração do RUP ser correspondente ao grupo de processos de planejamento do PMBok. Enquanto o PMBok possui um foco maior em sua etapa de planejamento, o RUP não cobre todos os aspectos de gerência de projetos de <i>software</i>, como recursos humanos, o que não quer dizer que não que dizer que existam algumas atividades técnicas relacionados ao próprio produto de <i>software</i> desempenhadas por um gerente de projeto.</p>
+
+<h3 id="fase-de-elaboracao-rup">Fase de Elaboração (RUP)</h3>
+<p align="justify">Segundo o RUP, o propósito da fase de elaboração é analisar o domínio do problema, estabelecer uma base sólida de arquitetura, coletar os requisitos, desenvolver um plano para o projeto e eliminar os elementos de maior risco do projeto, resolvendo questões como "O plano do projeto é confiável?" e "Os custos são admissíveis", em outras palavras, esta fase tem por finalidade eliminar os principais riscos e definir uma arquitetura estável, que atenda os requisitos definidos para o projeto (ou seja, a arquitetura, os requisitos e os planos são considerados estáveis o suficiente). Assim, será possível determinar os custos e o cronograma do projeto com maior precisão.</p>
+
+<h3 id="planejamento-pmbok">Planejamento (PMBok)</h3>
+<p align="justify">Segundo o próprio PMBok, o grupo de processos de planejamento consiste dos processos realizados para estabelecer o escopo total do esforço empregado no projeto, definir e refinar os objetivos e desenvolver o curso de ação necessário para alcançar esses objetivos. Ou seja, a fase de planejamento definirá mais precisamente o escopo, custo e prazo do projeto, assim como estabelecer uma organização das atividades e fornecer um controle do projeto, no qual será demandado caso venham a ocorrer mudanças significativas durante o projeto, como pode ser visto na figura abaixo.</p>
+
+<p><img alt="Planejamento" src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/00-Disciplina/img/Planejamento.png" /></p>
+<p>Representação da fase de Planejamento, contendo as atividades do PMBok de acordo com:
+<a href="http://www.ricardo-vargas.com/pt/videos/1">Fonte: Ricardo Vargas</a> </p>
+<h2 id="quais-os-processos-do-pmbok-sao-executados-ilustre">Quais os processos do PMBok são executados - ilustre</h2>
+<ul>
+<li>
+<h3 id="gerenciamento-da-integracao-do-projeto">Gerenciamento da integração do projeto</h3>
+</li>
+<li>
+<p><strong>Desenvolver o <a href="https://github.com/fga-gpp-mds/00-Disciplina/wiki/Plano-de-Gerenciamento-do-Projeto">Plano de Gerenciamento do Projeto</a></strong>: Segundo o Guia PMBOK®, desenvolver o plano de gerenciamento de projeto é o processo de documentação das ações necessárias para definição, preparação, integração e coordenação todos os planos auxiliares. É considerado o principal processo de planejamento, por integrar os demais planos complementando-os.</p>
+</li>
+<li>
+<h3 id="gerenciamento-do-escopo-do-projeto">Gerenciamento do escopo do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento do escopo:</b> Planejar o gerenciamento do escopo define e documenta como a equipe do projeto definirá, validará e controlará o escopo.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Coletar os requisitos:</b> Coletar os requisitos é o o processo de definir e documentar as necessidades das partes interessadas para atingir os objetivos dos projetos. Os requisitos devem ser obtidos, analisados e registrados em detalhes suficientes para serem medidos durante a execução do projeto além disso eles servem como base para a elaboração da EAP, assim como o planejamento de custos, tempo e qualidade.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Definir o escopo:</b> Definir o Escopo é desenvolver uma descrição detalhada do projeto e do produto.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Criar a EAP:</b> Criar a EAP é o processo de subdividir os produtos do projeto e o trabalho do projeto em componentes menores e mais gerenciáveis.</p>
+</li>
+<li>
+<h3 id="gerenciamento-do-tempo-do-projeto">Gerenciamento do tempo do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento do cronograma:</b> Planejar o gerenciamento do cronograma estabelece as políticas, procedimentos e documentação para planejar, desenvolver, gerenciar, executar e controlar o cronograma do projeto.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Definir as Atividades:</b> Segundo o Guia PMBOK®, Definir as atividades é o processo de identificação das ações específicas a serem realizadas para produzir as entregas do projeto.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Sequenciar as Atividades:</b> Sequenciar as Atividades tem como objetivo, identificar e documentar as relações de dependência entre as atividades.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Estimar os recursos das atividades:</b> Estimar os recursos da atividade é estimar todos os recursos necessários para a execução de cada atividade determinando o tipo e a quantidade de material, pessoas, equipamentos ou suprimentos.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Estimar as durações das atividades:</b> Estimar a duração da atividade é estimar a quantidade de períodos de trabalho necessários para terminar cada atividade considerando os recursos que foram estimados no processo Estimar os Recursos das Atividades.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Desenvolver o Cronograma:</b> Desenvolver o Cronograma é um processo iterativo que envolve analisar a sequência das atividades, sua duração, seus requerimentos de recursos e suas restrições para criar o cronograma do projeto e determinar as datas de início e término de cada atividade.</p>
+</li>
+<li>
+<h3 id="gerenciamento-dos-custos-do-projeto">Gerenciamento dos custos do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento dos custos:</b> Planejar o gerenciamento dos custos estabelece as políticas, procedimentos e documentação para planejar, gerenciar, executar e controlar os custos do projeto.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Estimar os custos:</b> Estimar os Custos tem como objetivo desenvolver uma estimativa dos custos dos recursos necessários para executar as atividades do projeto. Custo é a remuneração dos fatores de produção (mão-de-obra, capital, máquinas, instalações, materiais e serviços) utilizados na preparação e execução de um processo produtivo.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Determinar o orçamento:</b> Determinar o orçamento agrega os custos estimados das atividades para estabelecer uma linha de base.</p>
+</li>
+<li>
+<h3 id="gerenciamento-da-qualidade-do-projeto">Gerenciamento da qualidade do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento da qualidade:</b> Identificar os requisitos e/ou padrões da qualidade relevantes ao projeto e suas entregas e determinar como satisfazê-los.Garantir que toda atividade do projeto é aderente com as políticas e padrões da qualidade da empresa e que todas entregas estão em conformidade com seus critérios de aceitação.</p>
+</li>
+<li>
+<h3 id="gerenciamento-dos-recursos-humanos-do-projeto">Gerenciamento dos recursos humanos do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento dos recursos humanos:</b> Planejar o gerenciamento dos recursos humanos ou desenvolver o plano de recursos humanos tem como objetivo identificar e documentar as funções, responsabilidades, competências necessárias e relações hierárquicas.</p>
+</li>
+<li>
+<h3 id="gerenciamento-das-comunicacoes-do-projeto">Gerenciamento das comunicações do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento das comunicações:</b> Segundo o Guia PMBOK®, planejar o gerenciamento das comunicações é o processo de determinar as necessidades de informação das partes interessadas no projeto e definir uma abordagem de comunicação.</p>
+</li>
+<li>
+<h3 id="gerenciamento-dos-riscos-do-projeto">Gerenciamento dos riscos do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento dos riscos:</b> Planejar o gerenciamento dos riscos tem como objetivo definir como conduzir as atividades de gerenciamento de riscos para o projeto.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Identificar os riscos:</b> Identificar os riscos tem como objetivo determinar quais risco podem afetar o projeto e documentar suas características.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Realizar a análise qualitativa dos riscos:</b> Realizar a análise qualitativa de riscos tem como objetivo avaliar a exposição ao risco para priorizar os riscos que serão objeto de análise ou ação adicional.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Realizar a análise quantitativa dos riscos:</b> Realizar a análise quantitativa dos riscos tem como objetivo efetuar a análise numérica do efeito dos riscos identificados nos objetivos gerais do projeto.</p>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar as respostas aos riscos:</b> Planejar as respostas aos riscos tem como objetivo desenvolver opções e ações para aumentar as oportunidades e reduzir as ameaças aos objetivos do projeto.</p>
+</li>
+<li>
+<h3 id="gerenciamento-das-aquisicoes-do-projeto">Gerenciamento das aquisições do projeto</h3>
+</li>
+<li>
+<p><p align = "justify"><b>Planejar o gerenciamento das aquisições:</b> Planejar o gerenciamento das aquisições é o primeiro processo das aquisições e descreverá como os demais processos irão ocorrer através do Plano de Gerenciamento das Aquisições.</p>
+</li>
+<li>
+<h3 id="gerenciamento-das-partes-interessadas-do-projeto">Gerenciamento das partes interessadas do projeto</h3>
+</li>
+<li><p align = "justify"><b>Planejar o gerenciamento das partes interessadas:</b> Planejar o gerenciamento das partes interessadas tem como objetivo desenvolver estratégias para quebrar as resistências das partes interessadas e garantir seu engajamento no projeto.</li>
+</ul>
+<hr />
+<h2 id="gpp-como-construir-uma-eap-estrutura-analitica-de-projeto-tutorial">(GPP) Como construir uma EAP (Estrutura analítica de Projeto) - Tutorial</h2>
+<p align="justify">Segundo o PMBOK, "A EAP é a decomposição hierárquica do escopo total do trabalho a ser executado pela equipe do projeto a fim de alcançar os objetivos do projeto e criar as entregas exigidas", ou seja, ela nada mais é que uma representação gráfica que ilustra a divisão e subdivisão de todo o escopo do seu projeto em pacotes de trabalho entregáveis.</p>
+
+<p align="justify">O pacote de trabalho é o trabalho definido no nível mais baixo da EAP para o qual o custo e a duração podem ser estimados e gerenciados, ele pode assumir diferentes tamanhos e detalhamentos dependendo do contexto do projeto, se for um projeto pequeno é possível usar pacotes de trabalho a um nível muito detalhado, como atividades, por exemplo, já para um projeto grande, com muitas atividades, é inviável, logo estas atividades são agrupadas para formar pacotes de trabalho maiores.</p>
+
+<p align="justify">Agora sabendo o que é EAP e o que são os pacotes de trabalho, vamos aos passos para alocar os pacotes de trabalho de forma a criar uma EAP:</p>
+
+<p>1º Passo: <strong>Identificação e análise das entregas e seu trabalho relacionado</strong>
+<p align="justify">Identifique quais são as entregas do seu projeto e quais trabalhos estão relacionadas à esta entrega, mesmo indiretamente. <i>Nem sempre o trabalho estará diretamente ligada à entrega</i>, por exemplo, se você precisa entregar uma "Definição da Arquitetura do Sistema", treinamentos sobre Diagramas de Classe serão úteis para esta entrega, logo, podem fazer parte dela. Além disso, é <i>importante mapear todos os pacotes de trabalho com algum entregável</i>, pois assim fica claro como aquela atividade está agregando valor para o cliente, visto que ela agrega valor à uma entrega necessária para ele, caso contrário, se você não consegue atribuir a atividade à uma entrega, pode ser que ela não esteja contribuindo para nenhuma delas, e logo, não agregando valor para o cliente.</p></p>
+<p>2º Passo: <strong>Estruturação e organização da EAP</strong>
+<p align="justify">Uma vez identificadas as entregas e seu trabalho relacionado você consegue estruturar os níveis mais altos da EAP (Em preto na Figura 1). Não há um gabarito para esta estruturação,<i> o importante é que seja algo claro para o seu cliente</i>, você pode estruturar usando fases do ciclo de vida do projeto (Figura 1), áreas do projeto, entregas principais, dentre outros.</p></p>
+<p><img alt="Exemplo de EAP com fases do ciclo de vida no segundo nível" src="http://wpm.wdfiles.com/local--files/tecnica%3Adecomposicao/EAP2.GIF" />
+<p align="center"><b>Figura 1</b> - Exemplo de EAP estruturada pelas fases do ciclo de vida do projeto</p></p>
+<p>3º Passo: <strong>Decomposição dos níveis mais altos da EAP em componentes detalhados em menor nível</strong>
+<p align="justify">Com os níveis mais altos da EAP definidos, você pode fazer a decomposição desses níveis em componentes mais detalhados, como dito no início deste tópico, o quão detalhado é uma variável que depende do contexto do projeto, mas busque mantê-los claros para o cliente, estimáveis e gerenciáveis. <i>Certifique-se de não utilizar verbos no infinitivo para o nome dos pacotes de trabalho</i>, como "Fazer Documento de Visão", lembre-se de que são entregáveis, o ato de fazer a atividade não é entregável, e sim o resultado, o produto dela.</p></p>
+<p align="justify">Depois destes passos é importante se reunir com a equipe para validar se o grau de composição das entregas está adequado, e também com o cliente, para certificar-se de que as entregas fazem sentido para ele, se tudo isto está certo, provavelmente a EAP também estará.</p>
+
+<ul>
+<li>(GPP) Como construir um cronograma - Tutorial</li>
+<li>(GPP) Finalidade de cada plano e template</li>
+</ul>
+<h2 id="quais-os-processos-do-rup-sao-executados-ilustre">Quais os processos do RUP são executados - ilustre</h2>
+<h2 id="detalhe-as-atividades-realizadas-por-mds-nessa-fase">Detalhe as atividades realizadas por MDS nessa fase</h2>
+<p><p align="justify">A principal atividade realizada por MDS nesta fase é a elaboração do documento de arquitetura, este que será fundamental para as próximas fases e continuidade do projeto, pois assegurando que a arquitetura e os requisitos estejam estáveis a fase de construção será facilitada. E para garantir isso pode-se utilizar de protótipos diretamente para elicitar requisitos significativos do sistema.</p>
+<h2 id="quais-as-disciplinas-no-rup-sao-executadas">Quais as disciplinas no RUP são executadas</h2>
+<ul>
+<li>Modelagem de Negócios</li>
+<li>Requisitos de <i>Software</i></li>
+<li>Análise e Design</li>
+<li>Implementação</li>
+<li>Teste</li>
+<li>Implantação</li>
+<li>Gerencia de Configuração e mudança</li>
+<li>Gerenciamento de Projeto</li>
+<li>Gerencia de Configuração de Ambiente</li>
+</ul>
+<h2 id="quais-os-artefatos-sao-gerados-do-rup">Quais os artefatos são gerados do RUP?</h2>
+<ul>
+<li>Objetivo de cada artefato e tutorial</li>
+</ul>
+<p>Os principais artefatos gerados nesta fase foram:</p>
+<p align="justify">Documento de Arquitetura: este documento é responsável por apresentar a definição arquitetural escolhida para a criação do <i>software</i>. Tem, também, como objetivo proporcionar aos desenvolvedores uma maior compreensão do sistema expondo as decisões tomadas com base nos requisitos.</p>
+
+<p align="justify">Desenvolvimento e concepção do documento de caso de uso, que é o documento que consiste em descrever o sistema através da diagramação do sistema. Neste documento é onde ocorre a identificação dos atores do sistema e quais são as suas possíveis ações dentro do sistema. Com a construção deste documento a visualização do sistema fica mais clara para a modelagem do sistema, facilitando o levantamento de requisitos.</p>
+
+<p align="justify">Desenvolvimento e concepção do documento de especificação suplementar, que é um documento que tem a principal finalidade de levantar os requisitos não funcionais que e quais outros requisitos que não possuem relação direta com um caso de uso específico.</p>
+
+<p align="justify">Desenvolvimento e concepção do documento de especificação de caso de teste, que é um documento que descreve todos os cenários possíveis durante os testes do software e os resultados esperados.</p>
+
+<p align="justify">Opcionalmente, um manual de usuário preliminar, um documento o qual auxiliará o usuário na utilização do sistema. </p>
+
+<h2 id="quais-os-templates-usados-para-gerar-os-artefatos-do-pmbok">Quais os templates usados para gerar os artefatos do PMbok</h2>
+<ul>
+<li><a href="http://www.easybok.com.br/downloads/termo-de-abertura-do-projeto-5-ed/">Termo de Abertura</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-do-projeto-5ed/">Plano de Gerenciamento do Projeto</a></li>
+<li><a href="http://www.easybok.com.br/downloads/categorias/escopo/">Plano de Gerenciamento do Escopo</a></li>
+<li><a href="http://www.easybok.com.br/downloads/categorias/tempo/">Plano de Gerenciamento do Tempo</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-de-custos-5-ed/">Plano de Gerenciamento dos Custos</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-da-qualidade-5-ed/">Plano de Gerenciamento da Qualidade</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-recursos-humanos-5-ed/">Plano de Gerenciamento dos Recursos Humanos</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-das-comunicac-es-5-ed/">Plano de Gerenciamento das Comunicações</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-dos-riscos-5-ed/">Plano de Gerenciamento dos Riscos</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-das-aquisicoes-5-ed/">Plano de Gerenciamento das Aquisições</a></li>
+<li><a href="http://www.easybok.com.br/downloads/plano-de-gerenciamento-das-part-inter-5-ed/">Plano de Gerenciamento das Partes Interessadas</a></li>
+</ul>
+<h2 id="quais-os-templates-usados-para-gerar-os-artefatos-do-rup">Quais os templates usados para gerar os artefatos do RUP?</h2>
+<ul>
+<li><p align="justify">Os templates servem como um ‘modelo’ do artefato a ser usado em sua criação, sendo assim ligados à ferramenta que será usada. Por exemplo, um template do Microsoft Word pode ser usado como gabarito de um artefato que seja um documento ou relatório sendo que um relatório consiste em informações que são extraídas de um ou vários artefatos. </li>
+</ul>
+<h2 id="quais-os-papeis-desempenhados-por-gpp-nessa-fase-descreva">Quais os papéis desempenhados por GPP nessa fase? - descreva</h2>
+<ul>
+<li>Configuração do processo</li>
+<li>Implementação do processo</li>
+<li>Melhoria do processo</li>
+<li>Gerenciar mudanças organizacionais, aplicando engenharia de processos.</li>
+<li>Configurar Ambiente de desenvolvimento </li>
+<li>Gerenciamento de Riscos.</li>
+</ul>
+<h2 id="quais-os-papeis-desempenhados-por-mds-nessa-fase-descreva">Quais os papéis desempenhados por MDS nessa fase? descreva</h2>
+<h3 id="arquiteto-de-software">Arquiteto de <i>Software</i></h3>
+<p><p align="justify"> A principal função de um arquiteto de <i>software</i> é a definição da arquitetura que será usada no projeto, em MDS a arquitetura é pré-definida, <i>MVC(Model-View-Controller)</i>. No entanto outros fatores, como restrições, diagramas UML,metas arquiteturais e de desempenho, também fazem parte de suas responsabilidades. Essas e outras especificações devem estar descritas no Documento de Arquitetura.</p></p>
+<ul>
+<li>Atividades: Priorizar casos de uso, análise arquitetural e requisitos.</li>
+<li>Artefato: Documento de Arquitetura de <i>Software</i></li>
+</ul>
+<h3 id="desenvolvedor">Desenvolvedor</h3>
+<p>A função de um desenvolvedor é a codificação de um <i>software</i>.</p>
+<h3 id="analista-de-teste">Analista de Teste</h3>
+<p>Papel responsável por identificar quais os testes necessários para o sistema
+   * Atividades: Identificar objetivos do teste, definir detalhes do teste, identificar ideias do teste
+   * Artefato: Especificação do caso de teste</p>
+<h3 id="analista-de-sistema">Analista de sistema</h3>
+<p>Papel responsável por estabelecer atores e casos de uso.
+   * Atividades: Encontrar atores e casos de uso, estruturar o modelo de caso de uso
+   * Artefato: Modelo de caso de uso</p>
+<h2 id="quais-sao-principais-criterios-de-avaliacao-para-passagem-de-fase-rup">Quais são principais critérios de avaliação para passagem de fase? (RUP)</h2>
+<p><p>A passagem de fase ocorre quando existe uma entrega de artefato, ou seja, uma interação com o cliente, de maneira que ele fique ciente de como o projeto está sendo levado e dos avanços que estão sendo feitos. Por exemplo, uma passagem de fase é a entrega do documento de visão, que marca o fim da fase de iniciação.</p></p>
+<p>A fase de elaboração tem como objetivo analisar o domínio do problema, estabelecer uma arquitetura sólida para o desenvolvimento do <i>software</i> e eliminar os elementos de maior risco do projeto, além de desenvolver o plano de projeto. Seu final deve resultar em:</p>
+
+<ul>
+<li>Modelo de Caso de Uso pelo menos 80% completo (ele é iniciado na fase anterior)</li>
+<li>Especificação Suplementar para capturar os requisitos não funcionais e quaisquer requisitos que não estão associados com casos de uso específicos.</li>
+<li>Documento de Arquitetura, ou uma descrição da arquitetura do <em>software</em></li>
+<li>Um protótipo executável arquitetural</li>
+<li>Uma lista revisada de riscos</li>
+<li>Um plano de desenvolvimento geral para o projeto</li>
+</ul>
+<h2 id="quais-sao-principais-criterios-de-avaliacao-para-passagem-de-fase-pmbok">Quais são principais critérios de avaliação para passagem de fase? (PMBOK)</h2>
+<p><p align="justify">A transição de um fase para outra é definida por alguma forma de entrega. Essas entregas podem ser revisadas e conceituadas como finalizadas e completas, porém esses conceitos não determinam a proibição da passagem de fase, uma vez que os riscos são analisados e taxados como significativos ou não significativos. Quando isso ocorre é uma prática chamada de sobreposição de fases que é um exemplo da técnica conhecida como paralelismo, ou seja um fase é iniciada sem que a anterior seja finalizada. Um outro caso que pode acontecer, é uma fase ser finalizada sem que outra seja iniciada, quando isso acontece significa que o projeto foi finalizado ou há muitos riscos para sua continuidade.</p>
+<h2 id="referencias">Referências</h2>
+<p><a href="http://www.techoje.com.br/site/techoje/categoria/detalhe_artigo/1466">Como o RUP e o PMBOK se complementam na gestão de projetos de software</a></p>
+<p><a href="https://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf">Rational Unified Process</a></p>
+<p><a href="http://escritoriodeprojetos.com.br/grupo-de-processos-de-planejamento">Escritório de Projetos - Grupo de Processos de Planejamento</a></p>
+<p><a href="http://www.funpar.ufpr.br:8080/rup/process/workers/ovu_works.htm">Rational Unified Process (RUP): Papéis e Atividades</a></p>
+<p><a href="https://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf">Rational Unified Process: Best Practices for Software Development Teams</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

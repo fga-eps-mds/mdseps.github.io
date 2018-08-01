@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Integração Contínua Deploy Contínuo - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Integração-Contínua/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Automações/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><a href="http://techblog.netflix.com/2013/08/deploying-netflix-api.html">Deploying the Netflix API</a></p>
+<p><a href="https://www.youtube.com/watch?v=ZLBhVEo1OG4">Adopting Continuous Delivery</a></p>
+<hr />
+<ul style="list-style-type:disc">
+<li><p align = "justify" >GitHub, de Janeiro a Setembro de 2012 foram realizados 41.679 builds e 12.602 deploys sendo somente no dia 23 de agosto de 2012 realizados 563 builds e 175 deploys.</li>
+<li><p align = "justify" >A Amazon uma das maiores varejistas do mundo com serviços de cloud realiza o deploy de um novo software a cada segundo.</li>
+<li><p align = "justify" >O Facebook, visando o tamanho e o impacto que ele oferece atualmente, possui um departamento de release engineering desde 2008 com o objetivo de realizar uma liberação por dia como melhorias e novas funcionalidades. Com o novo escritório de engenharia em Londres, tinha como objetivo dobrar o número de deploys.</li></p>
+
+# Integração Contínua
+
+<ul style="list-style-type:disc">
+<li><p align = "justify" > Durante o desenvolvimento de um software, seus conjuntos de procedimentos e devido a presença de uma equipe que se constitui de diversos integrantes trabalhando e fazendo o controle de versionamento em um repositório, surge a necessidade de tratar erros e manter cada build da aplicação coesa através da utilização de um dos maiores pilares do desenvolvimento ágil, a integração contínua. A integração é responsável por garantir o funcionamento do código através de feedbacks ainda que o mesmo esteja sendo alterado simultaneamente, agilizando e facilitando a resposta da equipe com relação a possíveis problemas com a criação de outras funcionalidades e contribuindo para a redução do tempo gasto com testes, pois será necessário que o programador teste somente a nova funcionalidade implementada enquanto o servidor da integração contínua fica responsável por realizar os testes do sistema e garantir sua funcionalidade. Ela permite melhor visibilidade do projeto.</li> 
+<li><p align = "justify" > A Integração Contínua ajuda a construir confiança para inovar novas melhorias. Os projetos sofrem quando não há dados reais ou recentes para apoiar as decisões. Normalmente, os membros da equipe agrupam essas informações manualmente, exigindo tempo e esforço. O resultado é que muitas vezes a informação relevante nunca é coletada. Desse modo a integração facilita fazendo com que a equipe tome decisões eficazes fornecendo informações sobre o status de construção e métricas de qualidade do código e geralmente projetos que não abraçam essas abordagens são propensos a lançamentos atrasados.</li>
+
+
+* Vantagens da integração contínua:
+  - Feedback instantâneo
+  - Segurança em relação a mudanças
+  - Agilidade para correção de problemas
+  - Automação
+  - Sincronização
+
+![Integração](http://i.imgur.com/h1x61BP.png)
+
+## Como ocorre a integração contínua
+* Envio do código atualizado para o repositório com o código fonte.
+<br><br/>
+* Um sistema automatizado observa o sistema de controle de versão. 
+   - O sistema automatizado compila o código;
+   - O sistema automatizado executa os testes unitários;
+   - O sistema automatizado envia o feedback para que os membros da equipe possam conhecer o estado atual da build.
+
+![Int2](http://i.imgur.com/dlXW3av.png)
+
+# Deploy Contínuo
+<p align = "justify" > Um processo de Deploy Contínuo (“Continuous Deploy”) é a capacidade de automatizar a homologação e testes do software de um produto desenvolvido de forma automática e rápida, onde a cada alteração significativa seja possível rodar toda a integração contínua, validar o produtos e suas credencias e deixa-lo disponível para produção. Esse processo geralmente é classificado dentro de duas vertentes, que variam de acordo com as capacidades de cada projeto e seus requisitos:</p>
+
+<ol>
+<li><p align = "justify" ><b>Totalmente automatizado:</b> uma mudança no código é automaticamente verificada e, se tudo estiver certo, a aplicação vai para produção;</li></p>
+
+<li><p align = "justify" ><b>Semi-automatizado:</b> a ideia é ser capaz de empurrar para produção a última versão estável do aplicativo em qualquer momento apenas apertando um botão. Nesse caso, chamamos de “one-click-deployment”.</li></p>
+
+## Exemplo: Task gradle para subir para google play beta ou production
+
+Antes de configurar a task, voce deve adiquirir o serviceAccountEmail e o jsonFile como descrito no 
+[Tutorial de Deploy Automatico na Google Play PDF](https://github.com/GPP-MDS-2016/ImagensDaWiki/raw/master/tutorial_deploy_automático_google_play.pdf)
+
+O ${track} foi configurado como uma variavel de ambiente do gradle no script do circle ci, para especificar se é uma build de produção que vai para a play store ou uma build de testes que vai para emails selecionados. 
+
+
+wzxhzdk:0
+
+
+<p align = "justify" >Basicamente, sua ferramenta de integração contínua deverá gerar a build do produto, rodando os testes unitários e de aceitação, ou quaisquer outras medidas de validação do seu produto e de acordo com o configurado, podendo ser por commit ou push em uma branch específica ele irá enviar o seu aplicativo para ser publicado na loja de acordo com suas configurações ou para beta ou para distribuição de produção.</p>
+
+# Build Automation
+
+# Treinamento
+
+* Incluir descrição do treinamento/DOJO - passo a passo - etapas
+* Registrar os detalhes da dinâmica
+* Infraestrutura Necessária para a dinâmica
+* Código referência no projeto da disciplina (00-Disciplina)
+* Treinamento em, pelo menos 2 linguagens</div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Programação Extrema (XP) - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Scrum/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Indicadores-Ágeis/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#framework-xp">Framework XP</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><a href="#framework-xp"> Framework XP </a></p>
+<ul>
+<li><a href="#planejamento"> Planejamento </a></li>
+<li><a href="#gerenciamento"> Gerenciamento </a></li>
+<li><a href="#design"> Design </a></li>
+<li><a href="#códificação"> Códificação </a></li>
+<li><a href="#testes"> Testes </a></li>
+</ul>
+<p><a href="#valores-xp"> Valores XP </a></p>
+<ul>
+<li><a href="#comunicação"> Comunicação</a></li>
+<li><a href="#coragem"> Coragem</a></li>
+<li><a href="#feedback"> Feedback</a></li>
+<li><a href="#respeito"> Respeito</a></li>
+<li><a href="#simplicidade"> Simplicidade</a></li>
+</ul>
+<p><a href="#funcionalidade-pronta-xp"> Funcionalidade Pronta XP </a></p>
+<ul>
+<li><a href="#teste-unitário"> Teste Unitário</a></li>
+<li><a href="#programação-pareada"> Programação Pareada</a></li>
+<li><a href="#porque-parear-com-o-coleguinha?"> Por que parear com o coleguinha?</a></li>
+<li><a href="#variações-de-pares"> Variações de Pares</a></li>
+<li><a href="#teste-de-aceitação"> Teste de aceitação</a></li>
+<li><a href="#integração-contínua"> Integração Contínua</a></li>
+</ul>
+<p><a href="#referências"> Referências</a></p>
+<hr />
+<h1 id="framework-xp">Framework XP</h1>
+<p align = "justify">O XP, ou <i>Extreme Programming</i>, é uma metodologia de desenvolvimento de software que tem como objetivo principal levar ao extremo boas práticas de programação e boas práticas para o desenvolvimento de software no geral. O XP é uma metodologia baseada em valores, que definem uma maneira harmoniosa de trabalho na equipe de desenvolvimento.</p>
+
+<p align = "justify">O foco desta metodologia é no desenvolvimento incremental e iterativo de sistemas orientados à objetos nos quais os requisitos são instáveis e/ou incertos e que possua uma equipe pequena.</p>
+
+<p align = "justify"> O XP define uma série de regras para que o desenvolvimento seja realizado da melhor maneira possível:
+
+#### Planejamento:
+
+- As histórias de usuário são escritas
+- Sâo feitas _releases_ pequenas e constantes.
+- O projeto é dividido em iterações.
+- As iterações são planejadas no momento em que vai se começar o trabalho.
+
+#### Gerenciamento:
+
+- O time deve ter um espaço aberto de trabalho.
+- O desenvolvimento deve ter uma velocidade sustentável.
+- _Stand-up meetings_ iniciam o dia de trabalho.
+- O _velocity_ é sempre medido.
+- O XP deve ser consertado caso não esteja funcionando.
+
+#### Design
+
+- Simplicidade.
+- Crie soluções simples para explorar todas as soluções possíveis.
+- Funcionalidades não devem ser adicionadas antes da hora.
+- Refatore sempre que possível
+
+#### Códificação
+
+- O cliente precisa estar sempre disponível.
+- O código precisa ser escrito utilizando padrões.
+- O código é feito utilizando pareamento (_pair programming_).
+- Apenas um par integra o código de cada vez.
+- Toda a equipe deve participar da criação de todas as partes do código.
+
+#### Testes
+
+- Todo o código deve ter testes unitários.
+- Todo o código deve passar os testes unitários antes da _release_.
+- Se um bug existe, testes são criados.
+- Os testes de aceitação rodam com frequência.
+
+
+<p align = "justify">Como podemos notar, todas as boas práticas são levadas ao extremo no XP.
+Pode-se se dizer que é uma metodologia bastante volátil. Portanto, para que seja possível a adaptação às frequentes mudanças, o XP preconiza ciclos curtos que nos dá previsibilidade e redução de incertezas/riscos, simplicidade e melhorias constantes de código (<i>refactoring</i>) para facilitar a mudança e Testes Automatizados e Integração Contínua para aumentar a confiança.</p>
+
+<p align = "justify">O método XP preconiza que Codificação é a atividade central do projeto, que os Testes (que também são código) servem de especificação de requisitos, e a Comunicação oral entre desenvolvedores é fundamental, o que dá proximidade a equipe.</p>
+
+<p align = "justify">Isto não quer dizer que a equipe XP não constrói documentos e não faz modelagem, ela só não considera que um modelo é um documento. Modelos são feitos o tempo todo seja como quadro branco, sessões de design, etc, mas servem como um suporte para o concreto que realmente importa.</p>
+
+# Valores XP
+* **Comunicação**
+
+<p align = "justify">Todo o processo ágil é baseado na comunicação. A comunicação é essencial para o êxito da metodologia àgil e pode ser realizada de diversas formas, não somente por documentação como nas metodologias tradicionais. A comunicação entre os desenvolvedores instiga a disseminação do conhecimento dentro da equipe, evoluindo-a em aspectos técnicos. Já a comunicação com o cliente garante que o produto entregue atenda à suas expectativas.</p>
+
+* **Coragem**
+
+<p align = "justify">Consiste na coragem durante a implementação de tomar decisões que sejam melhores para a equipe e para o código. Por exemplo, coragem para refatorar códigos já implementadas para que a qualidade do código melhore.</p>
+
+* **Feedback**
+
+<p align = "justify">O <i>feedback</i> consiste em uma frequente comunicação entre o cliente e a equipe que seja um retorno sobre o sistema. Por exemplo, o que está bom, o que está ruim, o que deve ser implementado, o que deve ser alterado, o que realmente é necessário naquele momento e para aquele sistema. Dessa forma, a equipe que está desenvolvendo o sistema tem uma visão clara acerca dos requisitos e do que é necessário que seja implementado.</p>
+
+* **Respeito**
+
+<p align = "justify">O respeito é essencial para uma boa convivência da equipe. Todos os integrantes devem demonstrar respeito uns aos outros, não desmerecer as idéias ou indagações alheias. </p>
+
+* **Simplicidade**
+
+<p align = "justify">Sempre que foi iniciado a implementação de algo, deve ser questionado qual a forma mais fácil de implementar aquele escopo. Quanto mais simples, melhor a manutenibilidade e a qualidade do código.</p>
+
+# Funcionalidade Pronta XP
+
+## Teste Unitário
+<p align="justify">Este teste é utilizado para validar as classes básicas e os componentes do sistema que são considerados os menores elementos testáveis. Consiste em verificar se o fluxo de controle e dados estão corretos. Deve ser realizado no início da iteração.</p>
+
+* São escritos pelos desenvolvedores enquanto codificam o sistema.
+* Devem ser feitos de modo que sejam fáceis de executar e e re-executar várias e várias vezes para validar o sistema.
+* Devem ser criados para todas as classes do sistema.
+* São implementados para todos os métodos do sistema.
+* São escritos antes e ao decorrer da produção do sistema.
+* Devem ser o mais simples possível.
+
+## Programação Pareada
+<p align = "justify">Sugere que todo e qualquer código produzido no projeto seja sempre implementado por duas pessoas juntas, diante do mesmo computador, revezando-se no teclado. Além de parecer ter poucos benefícios, temos a impressão de que ela irá consumir mais recursos ou irá elevar o tempo do desenvolvimento. 
+
+### Por que parear com o coleguinha?
+<ol>
+<li><p align = "justify">A programação em par é uma forma eficaz de reduzir a incidência de bugs em um sistema. Quando dois desenvolvedores estão programando em par, um deles está com as mãos no teclado e no mouse. O outro está sentado ao lado, olhando para a mesma tela e preocupado em resolver o mesmo problema. É importante que eles conversem o tempo todo e troquem idéias sobre a solução.</li></p>
+
+<li><p align = "justify">A programação em par também ajuda os desenvolvedores a criarem soluções mais simples, mais rápidas de implementar e mais fáceis de manter. Isso ocorre em grande parte devido à oportunidade de dialogar e trocar idéias sobre programas que estejam sendo desenvolvidos. Quando nos deparamos com um problema, buscamos uma solução usando todo e qualquer recurso que esteja a nossa disposição. E, assim que encontramos uma solução, encerramos a busca e a utilizamos.</li></p>
+
+<li><p align = "justify">Além do mais, a programação em par produz um efeito conhecido como "pressão do par" que faz com que os desenvolvedores tenham maior foco na atividade e faz com que isso se mantenha por mais tempo. Imagine que você esteja programando em par e, de repente, resolva olhar seus emails. Trata-se de uma situação embaraçosa, isso faz com que o foco seja mantido no desenvolvimento.</li></p>
+
+<li><p align = "justify">Uma das características mais marcantes da programação em par é a sua capacidade de disseminação de conhecimento, especialmente em projetos XP, nos quais os desenvolvedores sempre trocam de pares, fazendo com que haja maior compartilhamento de informações ao longo do projeto.</li></p>
+
+<li><p align = "justify">A programação em par também é uma forma de fazer com que o desenvolvedor tenha mais confiança no código que produz. Afinal, o código foi produzido por ele e mais outra pessoa que o ajudou a revisá-lo. Quando sabemos que mais uma pessoa, ou talvez várias, já olharam para o código no qual trabalhamos e estão de acordo sobre o mesmo, temos maior confiança de que ele realmente irá funcionar. Isso significa que a programação em par reduz o estresse do desenvolvedor.</li></p>
+
+<li><p align = "justify">Consequentemente, as características apresentadas acima fazem com que a programação em par acelere o desenvolvimento significativamente, embora à primeira vista pareça o contrário. Em função dos benefícios acima, uma atividade feita em par normalmente é encerrada mais rapidamente que outra feita por um programador solitário, aumentando a produtividade.</li></p>
+
+<a href="https://courses.edx.org/courses/course-v1:BerkeleyX+CS169.1x+3T2015SP/"><i>Pair programming</i></a>
+
+### Variações de Pares
+**Especialista x Especialista**  
+
+<p align = "justify">Essa variação pode gerar um aumento enorme de produtividade e grandes resultados, entretanto nela pode haver uma falta de resolver problemas de novas formas, visto que dificilmente alguém da dupla questionará praticas já estabelecidas.</p>
+
+**Especialista x Principiante**  
+<p align = "justify">Essa variação cria uma excelente oportunidade para o expert mentorear o aprendiz. Ela proporciona a criação de novas ideias, visto que o aprendiz deve buscar questionar e aprender práticas estabelecidas e o expert tem que usar os conhecimentos adquiridos com essas práticas para explicá-las e questioná-las também. É muito importante que o aprendiz não haja passivamente no processo e não hesite em participar.</p>  
+
+**Principiante x Principiante**  
+<p align = "justify">Pode gerar ganhos de produtividade maior do que dois aprendizes trabalhando sozinhos, entretanto não é uma variação muito encorajada.</p>  
+
+## Teste de aceitação
+<p align="justify">Os Testes de Aceitação consistem no teste de uma possível aceitação por parte do cliente. Testes de aceitação estão intimamente ligados com as <i>user stories</i>. O teste de aceitação visa validar com o cliente o que foi definido nos requisitos do <i>software</i>, portanto, são usados para verificar se o produto desenvolvido está de acordo com o que foi estabelecido nos requisitos. Desse modo os testes de aceitação estão ligadas as funcionalidades do sistema, onde entradas podem ser simuladas e o comportamento de saída pode ser observada, esse comportamento deve ser compatível com o temos previamente definidos (requisitos).
+
+<p align="justify">Testes de aceitação visam testar o sistema do ponto de vista do usuário, de modo que são menos suscetíveis a alterações. Como o sistema é testado com todos os componentes interligados e configurados, inclusive bancos de dados e gerenciadores de filas, há garantias de que cada serviço oferecido esteja funcionando.
+
+## Integração Contínua
+
+<p align="justify">Integração contínua consiste em integrar o trabalho diversas vezes ao dia, ao invés de uma única vez, assegurando que a base de código permaneça consistente ao final de cada integração. O objetivo principal de utilizar a integração contínua é verificar se as alterações ou novas funcionalidades não criaram novos defeitos no projeto já existente.
+
+<p align="justify">Esse conceito de integração contínua está atrelado à aplicação de controle de versionamento, geralmente feito com o uso de alguma ferramenta, como o github. O controle de versionamento permite restaurar versões anteriores do sistema, comparar códigos, gerenciar alterações, entre outros, e é utilizado por equipes de desenvolvimento que compartilham mesmo código e projeto. 
+
+<p align="justify">O controle de versão funcionará de forma básica da seguinte forma:
+
+* O desenvolvedor faz o seu código, efetua um _build_ (compilar, preparar o executável, rodar os testes automatizados, etc) antes de integrar seu código com a base principal;
+* Após realizar o _build_, o sistema deve ser integrado a base do sistema de controle de versão através de sincronização;
+
+<p align="justify">Este processo deve ser feito frequentemente, evitando-se assim o acúmulo de codificação para a integração ao repositório. Algumas metodologias ditam que o desenvolvedor só pode considerar como pronto o trabalho quando o trabalho estiver sincronizado e então o desenvolvedor realizar um <i>build</i> na máquina de integração e após todos os testes serem executados com sucesso.
+
+<p align="justify">Na integração contínua o processo de <i>build</i> integrado deve ser feito constantemente, sendo sincronizado sempre que possível, evitando o acúmulo de códigos e de testes. Isto porque é mais fácil encontrar erros em pequenas integrações do que em uma integração grande.
+
+<p align="justify">Nesse contexto de código compartilhado e versionamento centralizado por uma ferramenta, a integração contínua, ou seja, a comunicação entre as partes que cada desenvolvedor construiu, permite que conflitos de versão sejam resolvidos mais rápido, desde que a integração ocorra continuamente.
+
+<p align="justify">A chave para uma boa integração, como visto anteriormente, é um ambiente de controle de versão centralizado, <i>builds</i> e testes automatizados. Essa prática reduz erros e riscos cometidos pela equipe, pois como o sistema é integrado contínua e rapidamente, os erros também são detectados na mesma velocidade.
+
+## Referências
+* [Desenvolvimento Ágil](http://www.desenvolvimentoagil.com.br/xp/valores/)
+* [Desenvolvimento XP](http://xp.edugraf.ufsc.br/bin/view/XP/TesteAceitacaoXtesteUnidade)
+* [Integração Contínua](http://www.desenvolvimentoagil.com.br/xp/praticas/integracao)
+* [Integração Contínua](http://www.devmedia.com.br/integracao-continua-uma-introducao-ao-assunto/28002)</div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

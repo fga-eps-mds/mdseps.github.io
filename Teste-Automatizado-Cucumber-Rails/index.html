@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Teste Automatizado Cucumber Rails - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Teste-Automatizado-Cucumber-JS/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Teste-Automatizado-com-Selenium-IDE/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#teste-de-aceitacao">Teste de Aceitação</a></li>
+            <li><a href="#execucao">Execução</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="teste-de-aceitacao">Teste de Aceitação</h1>
+<p>O teste de aceitação é aplicado no desenvolvimento de <em>software</em>, sendo uma abordagem que  enxerga o sistema como uma caixa preta, e o principal objetivo do mesmo é a verificação das funcionalidades em relação aos requisitos e funcionalidades originais do projeto, verificando assim se elas atendem as necessidade mais importantes dos usuários.
+    Para o teste de aceitação existem três estratégias comuns para a implementação de um teste, no qual são elas:</p>
+<ul>
+<li>Teste de Aceitação Formal: esse teste é um processo altamente gerenciado, no qual costuma a ser uma extensão de teste do sistema. Esses testes são planejados e projetados com um cuidado e um nível de detalhamento do sistema.  Os casos de teste devem ser um subconjunto dos realizados no teste do sistema. O teste de informação formal é totalmente automatizado.</li>
+</ul>
+<p>Os benefícios dessa forma de teste são:</p>
+<pre><code>- O progresso dos testes podem serem monitorados e medidos;
+
+- Critério de aceitabilidade é conhecido;
+
+- Os testes podem ser automatizados.
+</code></pre>
+<p>As desvantagens são:</p>
+<pre><code>- Teste não revela os defeitos subjetivos no software;
+
+- Testes podem se tornar uma nova implementação dos testes do sistema.
+</code></pre>
+<ul>
+<li>Teste de Aceitação Informal: o procedimento para a execução do teste não são definidos com um rigor como é feito no formal. As funções e as tarefas de negócios são identificadas e documentadas, porém não há caso de testes específicos para serem seguidos. Esse teste não é tão controlado como o formal, contudo é mais subjetivo.</li>
+</ul>
+<p>Benefícios do teste informal:</p>
+<pre><code>- São revelados defeitos subjetivos;
+
+- A função e recurso que serão testados são conhecidos.
+</code></pre>
+<p>Desvantagens:</p>
+<pre><code>- Não há controle dos casos de teste que são usados;
+
+- Os teste de aceitação podem ser limitados.
+</code></pre>
+<ul>
+<li>Teste Beta:  é o que menos pode ser controlado, no qual a quantidade de detalhes, os dados de abordagem são de responsabilidade do testados individual, assim cada um tem que identificar os próprios critérios que levarão se ele será aceito ou negado no seu sistema atual. Esse teste é implementado pelos usuários finais.</li>
+</ul>
+<p>Benefícios do teste beta:</p>
+<pre><code>- Teste implementado por usuários finais;
+
+- Possibilidade de recursos de teste;
+
+- Aumenta a satisfação do cliente.
+</code></pre>
+<p>As desvantagens:</p>
+<pre><code>- Nem todas as funções e recursos podem ser testados;
+
+- Dificuldade de medir o progresso do teste.
+</code></pre>
+<h2 id="execucao">Execução</h2>
+<p>Para iniciar os testes, deve-se criar o arquivo contendo os testes a serem realizados. O nome do arquivo deve ser NomeDaFuncionalidadeTestada.feature. Deve necessariamente terminar em “.feature”. Esse arquivo conterá os cenários de teste escritos, estruturando-se em:</p>
+<p><strong>Feature</strong>: (nome do arquivo. Exemplo do projeto: registration_member)</p>
+<p><strong>Background</strong> (opcional): É uma forma de setup. De forma geral, o que estiver contido no background rodará antes de executar cada um dos outros testes, de forma a criar condições específicas.</p>
+<p><strong>Scenario</strong>: É o teste em si. Consiste de vários steps (passos) que indicam a ocorrência de algo no sistema. Se os passos são seguidos corretamente, o teste passa e a funcionalidade está de acordo com o escrito.</p>
+<p>Como exemplo de um arquivo “.feature”, pode-se mostrar parte de um teste de aceitação do projeto Owla, chamado “registration_member.feature”:</p>
+<pre><code>      Feature: registration_member
+
+  Scenario: a user should be able to registrate
+        Given I go to /
+        When I click "Register yourself"
+        Then I should be in "/members/new"
+        When I write "Gabriel Alves" on "member_name"
+        When I write "gabriel@gmail.com" on "member_email"
+        When I write "gabi" on "member_alias"
+        When I write "testtest" on "member_password"
+        When I write "testtest" on "member[password_confirmation]"
+        When I click button "Register"
+        Then I should be in "Gabriel Alves" homepage
+        And the object with attribute "name" and value "Gabriel Alves" of "member" klass was created
+</code></pre>
+<p>Nesse teste, não há a presença de um background. Porém, um <em>background</em> seria a mesma coisa de um cenário, sem a presença da descrição presente na linha do <em>scenario</em>. Porém, apenas isso não é suficiente para que o teste rode sem problemas. Cada um dos <em>steps</em> deve ser definido em outro arquivo, para que o sistema saiba que ações devem ser chamadas para cada passo. Deve-se criar um arquivo de definição de passos. No caso do projeto Owla, esse arquivo se chama web_steps.rb e está contido na pasta <em>step_definitions</em>. Seu conteúdo é o que se segue:</p>
+<pre><code>      Given(/^I go to (.+)$/) do |path|
+       visit path
+      end
+
+      When(/^I click "(.+)"$/) do |link|
+       click_link(link)
+      end
+
+      When(/^I click button "(.+)"$/) do |link|
+        click_button(link)
+      end
+
+      Then(/^I should be in "(.+)"$/) do |page|
+        assert current_path == page
+      end
+
+      Then(/^I should be in "(.+)" homepage$/) do |object|
+        member = Member.find_by(name: object)
+        assert current_path == "/members/#{member.id}/home"
+      end
+
+      Then(/^I should be in "(.+)" edit$/) do |object|
+        member = Member.find_by(name: object)
+        assert current_path == "/members/#{member.id}/home"
+      end
+
+      When(/^I write "(.+)" on "(.+)"$/) do |value, field|
+        fill_in field, :with =&gt; value
+      end
+
+      Given(/^I have created "(.+)"$/) do |value|
+        member = Member.create(name: "Victor Navarro", email: value, alias: "vivi",
+        password: 'testtest', password_confirmation: 'testtest')
+      end
+
+      And(/^the object with attribute "(.+)" and value "(.+)" of "(.+)" klass was created$/) do |attribute, value, klass|
+        object = klass.capitalize.constantize.find_by("#{attribute}": value)
+        assert klass.capitalize.constantize.last.id == object.id
+      end
+</code></pre>
+<p>Percebe-se que, nesse arquivo, contém “frases” com REGEX especiais que funcionam da seguinte forma: para cada step contido no arquivo de testes, o sistema procurará no arquivo de definição de steps um com a mesma “frase” de comando. Lá, ele encontrará a frase e o que dentro da frase é uma variável, que deve ser pega do arquivo de testes. Então, dentro do bloco de código presente na definição do step, ele implementará o que for especificado.
+    É importante notar que há muitas funções referentes a clicar em botões, acessar links e páginas diferentes para auxiliar o desenvolvedor na hora de criar os testes. Apenas a pesquisa pode mostrar todas as funções, mas há sites que tentam fazer um resumo delas, como:</p>
+<pre><code>               https://gist.github.com/zhengjia/428105
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
