@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Tutorial REST API em Node.js - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../Home/">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../Home/">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Rails/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Teste-Automatizado-Cucumber-JS/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#historico-de-revisao">Histórico de Revisão</a></li>
+        <li class="main "><a href="#1-introducao">1. Introdução</a></li>
+        <li class="main "><a href="#2-tecnologias">2. Tecnologias</a></li>
+            <li><a href="#21-node-js">2.1. Node JS</a></li>
+            <li><a href="#22-rethinkdb">2.2. RethinkDB</a></li>
+        <li class="main "><a href="#3-instalacao">3. Instalação</a></li>
+            <li><a href="#31-instalando-o-node-js">3.1. Instalando o Node JS</a></li>
+            <li><a href="#32-instalando-o-rethinkdb">3.2. Instalando o RethinkDB</a></li>
+        <li class="main "><a href="#4-configuracao">4. Configuração</a></li>
+            <li><a href="#41-configurando-o-node-js">4.1. Configurando o Node JS</a></li>
+            <li><a href="#42-configurando-o-rethinkdb">4.2. Configurando o RethinkDB</a></li>
+        <li class="main "><a href="#5-bibliografia">5. Bibliografia</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="historico-de-revisao">Histórico de Revisão</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">26/05/2017</td>
+<td align="center">1.0</td>
+<td align="center">Estrutura de tópicos</td>
+<td align="center">Vitor Borges</td>
+</tr>
+<tr>
+<td align="center">29/05/2017</td>
+<td align="center">1.1</td>
+<td align="center">Escrita dos tópicos</td>
+<td align="center">Vitor Borges e Thiago Moreira</td>
+</tr>
+<tr>
+<td align="center">30/05/2017</td>
+<td align="center">1.2</td>
+<td align="center">Revisão dos tópicos</td>
+<td align="center">Danilo Barros e Lucas Rufino</td>
+</tr>
+<tr>
+<td align="center">30/05/2017</td>
+<td align="center">1.3</td>
+<td align="center">Validação dos tópicos e refatoração final</td>
+<td align="center">Danilo Barros, Lucas Rufino, Thiago Moreira e Vitor Borges</td>
+</tr>
+<tr>
+<td align="center">30/05/2017</td>
+<td align="center">1.4</td>
+<td align="center">Configuração final do RethinkDB</td>
+<td align="center">Danilo Barros, Lucas Rufino, Thiago Moreira e Vitor Borges</td>
+</tr>
+</tbody>
+</table>
+<div class="toc">
+<ul>
+<li><a href="#historico-de-revisao">Histórico de Revisão</a></li>
+<li><a href="#1-introducao">1. Introdução</a></li>
+<li><a href="#2-tecnologias">2. Tecnologias</a><ul>
+<li><a href="#21-node-js">2.1. Node JS</a></li>
+<li><a href="#22-rethinkdb">2.2. RethinkDB</a></li>
+</ul>
+</li>
+<li><a href="#3-instalacao">3. Instalação</a><ul>
+<li><a href="#31-instalando-o-node-js">3.1. Instalando o Node JS</a></li>
+<li><a href="#32-instalando-o-rethinkdb">3.2. Instalando o RethinkDB</a></li>
+</ul>
+</li>
+<li><a href="#4-configuracao">4. Configuração</a><ul>
+<li><a href="#41-configurando-o-node-js">4.1. Configurando o Node JS</a><ul>
+<li><a href="#411-criando-um-servidor">4.1.1 Criando um servidor</a></li>
+</ul>
+</li>
+<li><a href="#42-configurando-o-rethinkdb">4.2. Configurando o RethinkDB</a></li>
+</ul>
+</li>
+<li><a href="#5-bibliografia">5. Bibliografia</a></li>
+</ul>
+</div>
+<h2 id="1-introducao">1. Introdução</h2>
+<p><p align="justify>"&gt;Atualmente, diversas tecnologias necessitam de consumir dados de WebServices/APIs e nas disciplinas de GPP/MDS não é diferente.</p>
+<p align="justify>"&gt;Muitas das aplicações construídas no decorrer do semestre necessitam do consumo de dados por meio de servidores, principalmente nos projetos mobile, onde os dados consumidos são enviados para diversos clients diferentes.</p>
+<p align="justify>"&gt;Com isso, muitas das equipes optam por utilizar esse consumo de dados por meio de APIs construídas em tecnologias REST para consumo de dados via requisições HTTP.</p>
+<p align="justify>"&gt;Neste documento iremos explicar tecnologias amplamente conhecidas que se encaixam nessas características citadas anteriormente, mostrando uma introdução geral sobre o Node JS e  consumo de dados em um banco não-relacional RethinkDB.</p></p>
+<h2 id="2-tecnologias">2. Tecnologias</h2>
+<h3 id="21-node-js">2.1. Node JS</h3>
+<p align="justify">Contruído com base em Javascript, o Node.js tem a capacidade de executar código Javascript fora dos navegadores. Além disso, ele pode ser usado também como complemento de outras aplicações ou até mesmo em uma aplicação nativa, permitindo que <i>scripts</i> em JS sejam executados das mais variadas formas, proporcionando um melhor aproveitamento do mesmo. Ele é muito utilizado ao lado do servidor, atendendo demandas de aplicações web e APIs. Apesar disto, ele tem a capacidade de ser executado sem um servidor, sendo uma vantagem relevante.</p>
+
+<p align="justify">O Node.js utiliza o conceito de assincronidade no seu funcionamento, onde realiza varias atividades ao mesmo tendo, facilitando na realização de tarefas e otimizando o seu tempo. Quando o Node foi criado, em 2009, os desenvolvedores queriam deixar esse processo de assincronidade mais fácil e conveniente.</p>
+
+<p align="justify">A arquitetura do Node.js é baseada no paradigma de Programação Orientada a Evento, onde, basicamente, utiliza métodos para monitorar os eventos que avisa o código especializado em responder a um determinado evento, que aquele evento que ele espera ocorreu. Com isso, o código que foi avisado responde ao evento. Esse métodos citados são chamados de callback, e são utilizados constantemente na execução do Node. A assincronidade só é possível devido a presença desses métodos, para ter controle das ações dos diversos <i>scripts</i> rodando ao mesmo tempo na aplicação.</p>
+
+<h3 id="22-rethinkdb">2.2. RethinkDB</h3>
+<p><p align="justify">Construído em C++ mas que utiliza a sintaxe em Javascript (quando configurado com o Node), o banco de dados RethinkDB é não-relacional que possui uma vasta lista de queries flexíveis, operações intuitivas de monitoramento de API e é facil de configurar e aprender a utilizar.</p>
+<p align="justify">A principal ideia do RethinkDB é que ele seja uma base de dados <i>realtime</i>, onde o desenvolvedor pode dizer ao RethinDB para continuamente atualizar resultados de query em tempo real, para o consumo de dados em diversos tipos de plataformas.</p>
+<p align="justify">O RethinkDB deve estar dentro das alternativas a serem escolhidas quando:</p></p>
+<ul>
+<li>Aplicações mobile e web colaborativas;</li>
+<li>Jogos multiplayer;</li>
+<li>Mercados em tempo real;</li>
+<li>Dispositivos conectados.</li>
+</ul>
+<h2 id="3-instalacao">3. Instalação</h2>
+<p><p align="justify">Explicaremos agora como instalar essas tecnologias na plataforma Linux.</p></p>
+<h3 id="31-instalando-o-node-js">3.1. Instalando o Node JS</h3>
+<p>Para a instalação da mais nova versão do Node utilize os seguintes comandos:</p>
+<pre><code class="bash">    $ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+    $ sudo apt-get install -y nodejs
+</code></pre>
+
+<p>Opcionalmente, installe o <code>build-essencial</code>  para utilizar addons nativos do npm:</p>
+<pre><code class="bash">    $ sudo apt-get install -y build-essential
+</code></pre>
+
+<p>Com a instalação concluída, cheque se o npm e o Node foram instalados corretamente.</p>
+<pre><code class="bash">    $ node --version
+    v7.10.0
+</code></pre>
+
+<pre><code class="bash">    $ npm --version
+    4.5.0
+</code></pre>
+
+<h3 id="32-instalando-o-rethinkdb">3.2. Instalando o RethinkDB</h3>
+<p><p align="justify">Para a instalação do RethinkDB em distribuições Linux Ubuntu 16.04 utilize os comandos: </p></p>
+<pre><code class="bash">    $ source /etc/lsb-release &amp;&amp; echo &quot;deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main&quot; | sudo tee /etc/apt/sources.list.d/rethinkdb.list
+    $ wget -qO- https://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -
+    $ sudo apt-get update
+    $ sudo apt-get install rethinkdb
+</code></pre>
+
+<p>Para verificar a correnta instalação do RethinkDB execute:</p>
+<pre><code class="bash">    $ rethinkdb -v
+    rethinkdb 2.3.5~0trusty (GCC 4.8.2)
+</code></pre>
+
+<p align="justify">Para executar o Rethindb basta abrir o terminal e executar o comando `rethinkdb` e o mesmo será carregado na página do Browser default do seu sistema operacional utilizando a url https://localhost:8080 (porta padrão da tecnologia, mas que pode ser alterada).</p>
+
+<h2 id="4-configuracao">4. Configuração</h2>
+<p><p align="justify">Será falado agora uma breve configuração de uma API RESTFull utilizando o RethinkDB e o Node.js.</p>
+<p align="justify">O primeiro passo é criar um projeto em Node. Para isso, crie uma pasta com o nome do projeto que deseja criar.</p></p>
+<pre><code class="bash">    $ mkdir myAPI
+    $ cd myAPI
+</code></pre>
+
+<p>Na pasta da aplicação, inicie um projeto Node.js com o comando npm e as configurações desejadas.</p>
+<pre><code class="bash">     myApp-$ npm init
+</code></pre>
+
+<p>Após isso, deve-se inserir as informações referentes ao seu servidor. Ele pede o nome, versão, descrição, entry point, test command, git repository, palavras-chaves, autor e licença. No fim, ele pergunta se está tudo ok para criar o projeto. Se sim, digite <code>yes</code> no terminal.</p>
+<p>Com isso, será criado um arquivo chamado <code>package.json</code> que é o coração da aplicação Node.js, pois nele definimos todas as dependências da API.</p>
+<h3 id="41-configurando-o-node-js">4.1. Configurando o Node JS</h3>
+<p>Após a criação do projeto, é recomendado instalar algumas depêndencias que melhoram a experiência da utilização do Node, facilitando em diversos aspectos, como por exemplo, simplificar a utilização de querys para requisições no banco.</p>
+<p>As dependências recomendadas são:</p>
+<p><strong>Express:</strong> Poderoso gerenciador de rotas focado em alta performance, que simplifica requisições HTTP.</p>
+<pre><code class="bash">    $ npm install express --save
+</code></pre>
+
+<p><strong>Body-parser:</strong> Facilita a captura dos objetos que são passados ou recebidos na sua requisição HTTP.</p>
+<pre><code class="bash">    $ npm install body-parser --save
+</code></pre>
+
+<p><strong>Morgan:</strong> Gera logs de requisição para melhor acompanhamento das rotas.</p>
+<pre><code class="bash">    $ npm install morgan --save
+</code></pre>
+
+<p><strong><em>Nodemon:</em></strong> Recarrega automaticamente o seu servidor, poupando o trabalho de reiniciá-lo sempre que houver alguma modificação.</p>
+<pre><code class="bash">    $ npm install nodemon --save
+</code></pre>
+
+<p>O comando <code>--save</code> presente nestes comandos citados acima salva todas as dependências instaladas no <code>package.json</code>, facilitando o compartilhamento do código posteriormente. Para um terceiro instalar essas dependências do projeto, basta digitar o comando:</p>
+<pre><code class="bash">    $ npm install
+</code></pre>
+
+<h4 id="411-criando-um-servidor">4.1.1 Criando um servidor</h4>
+<p>Após os passos acima, você já é capaz de criar sua API. Mas para isso, é necessário criar o servidor para iniciar os procedimentos.</p>
+<p>Devemos criar um arquivo na pasta raiz para rodar nossa aplicação. Neste exemplo usaremos o nome <code>app.js</code>.</p>
+<p>Inicialmente, é preciso importar as depêndencias que serão necessárias para rodar o servidor. A importação é feita com o método <code>require</code> do Node.</p>
+<pre><code class="javascript">    var express = require('express')
+    var bodyParser = require('body-parser')
+    var morgan = require('morgan')
+</code></pre>
+
+<p>Após isso, devemos evocar a função para utilizar os objetos do express em si.</p>
+<pre><code class="javascript">    var app = express()
+</code></pre>
+
+<p>No fim, devemos subir o servidor utilizando nossa variável <code>app</code>. Para isso, passamos a porta que o servidor vai escutar e uma função que vai ser chamada assim que o servidor estiver no ar, como é mostrada no código abaixo.</p>
+<pre><code class="javascript">    app.listen(3000, function() {
+        console.log('Servidor executando no endereço http://localhost:' + 3000)
+    })
+</code></pre>
+
+<p>Após isso, seu servidor estará pronto para ser utilizado.</p>
+<p>Utilize o comando abaixo para rodar o seu servidor.</p>
+<pre><code class="bash">    $ node app
+</code></pre>
+
+<h3 id="42-configurando-o-rethinkdb">4.2. Configurando o RethinkDB</h3>
+<p>Uma tecnologia auxiliar ao RethinkDB que nos permite criar models e facilita nas queries é o Thinky, o qual utilizamos para configurar a base de dados.
+Para instalar o Thinky, faça: </p>
+<pre><code class="bash">    myAPI-$ npm install --save thinky
+</code></pre>
+
+<p>Com isso, crie uma pasta com o nome <code>database</code> e configure o arquivo de banco de dados chamado <code>index.js</code>.</p>
+<pre><code class="javascript">    //Path: myAPI/database/
+
+    var thinky = require('thinky')()
+    var { type, r } = thinky // importa 'type' para tipos de variáveis e 'r' como o próprio módulo do RethinkDB
+
+    async function init () {
+        try {
+            await thinky.dbReady()
+            return thinky
+        } catch (error) {
+            throw error
+        }
+    }
+    export { init, thinky, type, r }
+
+</code></pre>
+
+<p>Com a base de dados configurada, volte ao arquivo <code>app.js</code> e adicione as linhas de configuração do banco de dados:</p>
+<pre><code class="javascript">    var express = require('express')
+    var bodyParser = require('body-parser')
+    var db = require('./database')
+    var morgan = require('morgan')
+
+    var app = express()
+
+    app.use(bodyParser.json({
+      limit: '5mb'
+    }))
+
+    db.init()
+      .then(db =&gt; {
+        app.listen(3000, () =&gt; {
+          console.log('Server listening on http://localhost:3000')
+        })
+      })
+</code></pre>
+
+<p>O próximo passo é criar uma <code>model</code> para poder salvar no banco de dados. Para isso, crie uma pasta <code>models</code>.</p>
+<pre><code class="bash">    myAPI-$ mkdir models
+</code></pre>
+
+<p>Agora, crie uma model qualquer de teste, no caso, criaremos uma model <code>User.js</code>.</p>
+<pre><code class="javascript">    var { thinky, type } = require('../database')
+
+    var User = thinky.createModel('Users', {
+        name: type.string(),
+        email: type.string()
+    })
+
+    export default User
+</code></pre>
+
+<p>Agora, basta criar uma <code>api</code> e configura-la para disponibilizar os métodos de requisição e consumir a API REST. Para isso, crie a pasta <code>api</code> e o arquivo <code>index.js</code>.</p>
+<pre><code class="bash">    myAPI-$ mkdir api
+    myAPI-$ touch api/index.js
+    myAPI-$ touch api/users.js
+</code></pre>
+
+<pre><code class="javascript">    // index.js
+    var { Router } = require('express')
+    var userRouter = require('./users')
+
+    export default ({ db }) =&gt; {
+        let api = Router()
+
+        var users = userRouter({ db })
+        api.use('/users', users)
+
+        return api
+    }
+</code></pre>
+
+<p>Crie também o arquivo <code>users.js</code> na pasta <code>api</code>.</p>
+<pre><code class="javascript">    // users.js
+    var { Router } = require('express')
+    var User = require('../models/User')
+
+    export default ({ db }) =&gt; {
+        let router = Router()
+        /* 
+           configuração para rotas do tipo users/:id para 
+           utilizarem o id do User como parâmetro
+        */
+        router.param('user', (req, resp, next, id) =&gt; {
+            req.userDocument = User.get(id)
+            next()
+        })
+
+        router.get('/', async (request, response) =&gt; {
+            try {
+                var result = await User.run() // executa a query de get all no bando de dados
+                response.json(result)
+            } catch (error) {
+                response.status(500).send(error)
+            }
+        })
+
+        return router
+    }
+
+</code></pre>
+
+<p>Agora, volte no arquivo <code>app.js</code> e configure a rota para <code>/api</code>.</p>
+<pre><code class="javascript">    var api = require('./api') // importe a pasta 'api'
+
+    [...]
+
+    db.init()
+      .then(db =&gt; {
+        app.use('/api', api({ db })) // configure as rotas para começarem com '/api'
+        app.listen(3000, () =&gt; {
+          console.log('Server listening on http://localhost:3000')
+        })
+      })
+</code></pre>
+
+<p>Agora, para executar a <code>api</code> basta executar os comandos <code>rethinkdb</code> e <code>nodemon app.js</code> na pasta <code>myAPI</code> e acessar a rota <code>http://localhost:3000/api/users</code> para acessar a rota e verificar a resposta do servidor.</p>
+<p>Repare que não existe nenhum usuário cadastrado. Para inserir um usuário de teste, acesse o <code>http://localhost:8080</code> para acessar o RethinkDB, como a imagem a seguir:</p>
+<p><img alt="RethinkDB" src="https://i.imgur.com/2tD05Lz.png" /></p>
+<p>Agora, acesse o <code>Data Explorer</code>  e crie um usuário default:</p>
+<p><img alt="Default user" src="https://i.imgur.com/vKsnE4r.png" /></p>
+<p>Agora, ao acessar novamente a rota de <code>/api/users</code> na <code>API</code> você verá a resposta do servidor com o usuário cadastrado.</p>
+<p><img alt="Server response" src="https://i.imgur.com/U8RzI9b.png" /></p>
+<p>Pronto. Você já pode criar sua própria RESTfull API com Node.js e RethinkDB!</p>
+<h2 id="5-bibliografia">5. Bibliografia</h2>
+<ul>
+<li>http://nodebr.com/o-que-e-node-js/</li>
+<li>https://pt.stackoverflow.com/questions/80601/o-que-é-a-programação-orientada-a-eventos</li>
+<li>https://www.rethinkdb.com/faq/</li>
+<li>https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

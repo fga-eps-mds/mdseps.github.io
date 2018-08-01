@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Android Integração contínua com Circle CI - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../Home/">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../Home/">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Configuração-de-Ambiente/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Configuração-de-Ambiente-para-React-Native/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#sumario">Sumário</a></li>
+        <li class="main "><a href="#1-introducao">1. Introdução</a></li>
+        <li class="main "><a href="#2-circle-ci">2. Circle CI</a></li>
+        <li class="main "><a href="#3-script-para-checar-se-atingiu-cobertura">3. Script para checar se atingiu cobertura</a></li>
+        <li class="main "><a href="#4-gradle">4. Gradle</a></li>
+        <li class="main "><a href="#5-fastlane">5. Fastlane</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="sumario">Sumário</h1>
+<p><a href="#1-introdução">1. Introdução</a></p>
+<p><a href="#2-circle-ci">2. Circle CI</a> </p>
+<p><a href="#3-Script-para-checar-se-atingiu-cobertura">3. Script para checar se atingiu cobertura </a> </p>
+<p><a href="#4-gradle">4. Gradle</a> </p>
+<p><a href="#5-fastlane">5. Fastlane</a> </p>
+<hr />
+<h1 id="1-introducao">1. Introdução</h1>
+<p align="justify">Este documento descreve o plano de gerenciamento de configuração de mudanças e tem como objetivo deixar todos os integrantes do projeto por dentro de como ocorrerão as configurações de ambiente, as rotinas e padrões de nomenclatura realizadas durante as mudanças do mesmo.</p>
+
+<h1 id="2-circle-ci">2. Circle CI</h1>
+<p><p align="justify"><i>CircleCI</i> foi a ferramenta de integração contínua decidida por ser utilizada. Sua configuração é feita através de um arquivo <i>.yml</i> na pasta raiz do projeto.
+As builds geradas pela ferramenta podem ser acessadas neste <a href="https://circleci.com/gh/fga-gpp-mds/2016.2-CidadeDemocratica/tree/master"><i>link</i></a>.</p></p>
+<pre><code class="yml">#Install android build tools, platforms
+#Supported versions here https://circleci.com/docs/android
+machine:
+  ruby:
+    version: 2.3.0
+
+dependencies:
+  pre:
+    - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23,extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-m2repository
+    - gem install fastlane --verbose
+
+  override:
+    - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
+
+test:
+  pre:
+        # start the emulator
+      - emulator -avd circleci-android22 -no-audio -no-window:
+          background: true
+          parallel: true
+        # wait for it to have booted
+      - circle-android wait-for-boot
+
+  override:
+    #run unit tests
+    - ./gradlew test
+    #run code coverage
+    - ./gradlew jacocoTestReport
+    # run tests  against the emulator.
+    # - ./gradlew connectedCheck
+    # copy the build outputs to artifacts
+    - cp -r ./app/build/outputs $CIRCLE_ARTIFACTS/
+    # copy the test results to the test results directory.
+    - cp -r ./app/build/reports/* $CIRCLE_TEST_REPORTS/
+
+    - sudo apt-get install dc
+
+    - chmod +x ./CheckCoverageGoal.sh
+
+    - ./CheckCoverageGoal.sh
+
+  post:
+    - bash &lt;(curl -s https://codecov.io/bash)
+
+
+deployment:
+  production: 
+    branch: production
+    commands:
+      - fastlane release
+
+  beta:
+    branch: beta
+    commands:
+      - fastlane beta
+</code></pre>
+
+<h1 id="3-script-para-checar-se-atingiu-cobertura">3. Script para checar se atingiu cobertura</h1>
+<pre><code class="shell">#!/bin/bash
+
+coverageExpected=&quot;30.0&quot;
+
+# Get the coverage value from the coverage report
+coverageResult=$(grep -oE '[0-9.]+%' ./app/build/reports/jacoco/jacocoTestFreeDebugUnitTestReport/html/index.html | head -n1)
+coverageResult=&quot;${coverageResult//%}&quot;
+
+echo &quot;Coverage expected $coverageExpected. Coverage Result $coverageResult &quot;
+
+# If the coverage requirements was satisfied
+if ! echo &quot;$coverageResult $coverageExpected -p&quot; | dc | grep &gt; /dev/null ^-; then
+    echo &quot;Coverage goal was satisfied&quot;
+        exit 0
+    else
+    echo &quot;Error: Coverage goal was not satisfied&quot;
+        exit 1
+fi
+
+</code></pre>
+
+<h1 id="4-gradle">4. Gradle</h1>
+<p><p align="justify"><i>Task gradle</i> para configurar o identificador da versão do <i>apk</i> que será enviado e os certificados de cosntrucao do <i>.apk</i>. A versão está sendo identificada de acordo com a data atual para que sempre automaticamente ao criar um <i>apk</i> a versão atual seja maior que a antiga.</p></p>
+<pre><code class="groovy">apply plugin: 'com.android.application'
+apply plugin: 'jacoco-android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion &quot;23.0.3&quot;
+
+    //SETUP THE CERTIFICATE TO GENERATE A SIGNED .apk
+    signingConfigs {
+           release {
+               storeFile file(&quot;release.jks&quot;)
+               storePassword &quot;123456&quot;
+               keyAlias &quot;CidadeDemocratica&quot;
+               keyPassword &quot;123456&quot;
+           }
+    }
+
+    //SETUP THE VERSION NAME WITH THE CURRENT DATE TIMESTAMP
+    defaultConfig {
+        applicationId &quot;com.cidadedemocratica.android&quot;
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionName &quot;${getVersionNameTimestamp()}&quot;
+        versionCode getVersionCodeTimestamp()
+        testApplicationId &quot;com.cidadedemocratica.android.test&quot;
+        testInstrumentationRunner &quot;com.cidadedemocratica.android.JUnitJacocoTestRunner&quot;
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            testCoverageEnabled true
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    productFlavors {
+        free {}
+    }
+
+    jacocoAndroidUnitTestReport {
+        excludes += ['**/External**/','**/ReportController**', '**/controller/**', '**/view/**']
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    testCompile 'org.json:json:20140107'
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2'){
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+        exclude module: 'support-v13'
+        exclude module: 'recyclerview-v7'
+    }
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.firebase:firebase-messaging:9.8.0'
+}
+
+    //GET VERSION TIME STAMP
+def getVersionNameTimestamp() {
+    return new Date().format('yy.MM.ddHHmm')
+}
+
+def getVersionCodeTimestamp() {
+    def date = new Date()
+    def formattedDate = date.format('yyMMddHHmm')
+    def code = formattedDate.toInteger()
+    println sprintf(&quot;VersionCode: %d&quot;, code)
+    return code
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+</code></pre>
+
+<p>Antes de configurar a task, voce deve adiquirir o serviceAccountEmail e o jsonFile como descrito no 
+<a href="https://github.com/GPP-MDS-2016/ImagensDaWiki/raw/master/tutorial_deploy_automático_google_play.pdf">Tutorial de Deploy Automatico na Google Play PDF</a>.</p>
+<h1 id="5-fastlane">5. Fastlane</h1>
+<p><i>Fastfile</i> com a configuração do fastlane ferramenta para organizar <i>scripts</i> de automação em simples comandos:  </p>
+<pre><code class="ruby"># Update this, if you use features of a newer version
+fastlane_version &quot;1.105.3&quot;
+
+default_platform :android
+
+platform :android do
+  before_all do
+    # ENV[&quot;SLACK_URL&quot;] = &quot;https://hooks.slack.com/services/...&quot;
+  end
+
+  desc &quot;Runs all the tests&quot;
+  lane :test do
+    gradle(task: &quot;test&quot;)
+  end
+
+  desc &quot;Submit a new Beta Build&quot;
+  lane :beta do
+   gradle(task: 'clean')
+   gradle(task: &quot;assembleRelease&quot;)
+   supply(track: &quot;beta&quot;, apk: &quot;app/build/outputs/apk/app-free-release.apk&quot;, json_key: &quot;app/play-release.json&quot;, package_name: &quot;com.cidadedemocratica.android&quot;)
+   slack(message: 'Successfully distributed a new beta build', slack_url:&quot;https://hooks.slack.com/services/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&quot;)
+end
+
+  desc &quot;Deploy a new version to the Google Play&quot;
+  lane :deploy do
+    gradle(task: 'clean')
+    gradle(task: &quot;assembleRelease&quot;)
+    supply(apk: &quot;app/build/outputs/apk/app-free-release.apk&quot;, json_key: &quot;app/play-release.json&quot;, package_name: &quot;com.cidadedemocratica.android&quot;)
+    slack(slack_url: &quot;https://hooks.slack.com/services/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&quot;, message: 'Successfully distributed a new build in Play Store')
+
+  end
+end
+</code></pre>
+
+<p align="justify">Basicamente, o <i>CircleCI</i> gera a <i>build</i> do produto, executando os testes unitários e de aceitação, checa se atingiu o limite aceitável de cobertura de testes, comunica a ferramenta de cobertura de teste enviando a cobertura atual do <i>software</i>.</p>
+
+<p align="justify">No caso das <i>branchs production</i> e <i>beta</i>, ao criar uma <i>branch</i> com o nome <i><b>production</b></i> ou com nome <i><b>beta</b></i>, ele também envia para <i>deploy</i> no respectivo contexto.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

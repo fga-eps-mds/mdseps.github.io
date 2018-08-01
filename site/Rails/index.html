@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Tutorial Instalação Ruby on Rails - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../Home/">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../Home/">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua/">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Configuração-de-Ambiente-para-React-Native/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../REST-API-em-Node.js-e-RethinkDB/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#configuracao-de-ambiente">Configuração de Ambiente</a></li>
+            <li><a href="#instalando-ruby-on-rails-no-ubuntu">Instalando Ruby on Rails no Ubuntu</a></li>
+        <li class="main "><a href="#arquitetura-mvc-ruby-on-rails">Arquitetura MVC Ruby on Rails</a></li>
+        <li class="main "><a href="#websockets">WebSockets</a></li>
+            <li><a href="#o-que-e">O que é?</a></li>
+            <li><a href="#websockets-vs-protocolo-http">WebSockets VS Protocolo HTTP</a></li>
+        <li class="main "><a href="#dojo-de-linguagem-material-didatico">DOJO de linguagem (material didático)</a></li>
+            <li><a href="#rails-tutorial-michael-hartl">Rails Tutorial - Michael Hartl</a></li>
+            <li><a href="#codecademy">Codecademy</a></li>
+            <li><a href="#caelum">Caelum</a></li>
+        <li class="main "><a href="#dojo-de-testes-material-didatico">DOJO de testes (material didático)</a></li>
+            <li><a href="#code-school">Code school</a></li>
+            <li><a href="#usando-o-rspec-para-testar-sua-aplicacao-rails-modelos">Usando o RSpec para testar sua aplicação Rails - Modelos</a></li>
+        <li class="main "><a href="#repositorios-educativos">Repositórios educativos</a></li>
+        <li class="main "><a href="#material-didatico-produzido-na-disciplina-times-coaches-etc">Material didático produzido na disciplina (times, coaches, etc)</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="configuracao-de-ambiente">Configuração de Ambiente</h1>
+<h2 id="instalando-ruby-on-rails-no-ubuntu">Instalando Ruby on Rails no Ubuntu</h2>
+<h3 id="usando-rvm-ruby-version-manager">Usando RVM (Ruby Version Manager)</h3>
+<p align = "justify" >O RVM é uma ferramenta muito popular e bem suportada pela comunidade, utilizada para facilitar a mudança entre as versões do Ruby e gerenciar as gemas. Convenientemente o RVM pode ser utilizado para instalar o Ruby.</p>
+
+<h3 id="preparacao-do-sistema">Preparação do sistema</h3>
+<p align = "justify" >Para a instalação do Ruby on Rails, é necessário uma preparação prévia na sua máquina. 
+Também é necessário ter acesso de superusuário (root) para atualizar os softwares do sistema.</p>
+
+<p>Primeiramente atualize o gerenciador de pacotes:</p>
+<p><code>$ sudo apt-get update</code></p>
+<p>Instale o <a href="http://en.wikipedia.org/wiki/CURL">CURL</a>:</p>
+<p><code>$ sudo apt-get install curl</code></p>
+<h3 id="instale-ruby-usando-rvm">Instale Ruby usando RVM</h3>
+<p>Use RVM, para instalar o Ruby e gerenciar suas versões do Rails.</p>
+<p align = "justify" >Se houver uma versão antiga do Ruby instalada na máquina, não há necessidade de removê-la. RVM deixará a versão do sistema como está e usará o SHELL para interceptar qualquer chamada ao Ruby. </p>
+
+<p>O <a href="https://rvm.io/rvm/install/">site do RVM</a> explica como instalar o RVM. Está é a forma mais simples:</p>
+<p><code>$ \curl -L https://get.rvm.io | bash -s stable --ruby</code></p>
+<p>A flag <code>--ruby</code> instalará a versão mais recente do Ruby.</p>
+<h3 id="se-ja-existe-alguma-versao-do-rvm">Se já existe alguma versão do RVM</h3>
+<p>Se você já tem uma versão do RVM instalado, atualize para a última versão e instale o Ruby:</p>
+<p><code>$ rvm get stable --autolibs=enable</code></p>
+<p><code>$ rvm install ruby</code></p>
+<p><code>$ rvm --default use ruby-2.3.1</code></p>
+<p>Neste exemplo utiliza-se a versão 2.3.1 do Ruby, mas pode ser modificado para outra versão se necessário.</p>
+<h3 id="instale-nodejs">Instale Node.js</h3>
+<p>Para desenvolvimento no Ubuntu Linux é melhor instalar o ambiente javascript Node.js server-side.</p>
+<p><code>$ sudo apt-get install nodejs</code></p>
+<p>e configure o <code>$PATH</code>.</p>
+<p>Se não tiver o Node.js instalado, será necessário adicionar ao Gemfile para cada aplicação Rails que for criada:</p>
+<p><code>gem 'therubyracer'</code></p>
+<h3 id="verifique-o-gerenciador-de-gems">Verifique o Gerenciador de Gems</h3>
+<p>RubyGems é o gerenciador de Gems no Ruby.</p>
+<p>Verifique a versão do gerenciador instalado com o seguinte comando:</p>
+<p><code>$ gem -v</code></p>
+<p><code>2.3.1</code></p>
+<p>Para atualizar utilize <code>$ gem update --system</code>.</p>
+<h3 id="instale-o-bundler">Instale o Bundler</h3>
+<p>Bundler é uma ferramenta essencial para gerenciar as gems quando se está desenvolvendo e rodando aplicações Rails.</p>
+<p><code>$ gem install bundler</code></p>
+<h3 id="opcoes-de-instalacao-rails">Opções de instalação Rails</h3>
+<p>Verifique a versão do Rails atual:</p>
+<p><code>$ rails -v</code></p>
+<p><code>Rails 5.0.0</code></p>
+<p>Instale então o rails:</p>
+<p><code>$ gem install rails</code></p>
+<p>e verifique sua versão após a instalação: </p>
+<p><code>$ rails -v</code></p>
+<p>Desta forma será instalado a última versão estável, se for necessária uma versão específica utilize o comando a seguir.</p>
+<p>Por exemplo, se for necessária a versão do Rails 3.2.18:</p>
+<p><code>$ gem install rails --version=3.2.18</code>
+<code>$ rails -v</code></p>
+<p>Fonte de informação: <a href="http://railsapps.github.io/installrubyonrails-ubuntu.html">Site RAILSAPPS</a></p>
+<h1 id="arquitetura-mvc-ruby-on-rails">Arquitetura MVC Ruby on Rails</h1>
+<p><ol type="1">
+<li><b>Model</b>: Contém dados ou Informações sobre a aplicação, além do estado da mesma, juntamente com as regras do negócio;</li>  <br />
+<li><b>View</b>: Interface para ver e modificar os dados/informações. É passiva – o que quer dizer que não processa nada;</li>   <br />
+<li><b>Controller</b>: Realiza operações ou manipulações nos dados/informações interagindo com a Model e interpreta os eventos realizados na View.</li>   <br />
+</ol></p>
+<p align = "justify" >A <i>Model</i> representará as informações ou dados abstraídos do mundo real, de modo que esta também não depende da <i>Controller</i> ou <i>View</i>. A <i>View</i> mostrará o dados contidos na <i>Model</i> e pode também obter e/ou atualizar os dados da mesma e envia as ações executadas pelo usuário para a <i>Controller</i>. A <i>Controller</i> proverá os dados contidos na <i>Model</i> para a <i>View</i>, além de interpretar as ações do usuário – como clicar em um botão, funciona como um <i>link</i> entre o usuário e o próprio sistema em si.</p>
+
+<h1 id="websockets">WebSockets</h1>
+<h2 id="o-que-e">O que é?</h2>
+<p align = "justify" >WebSockets é uma tecnologia avançada que torna possível abrir uma comunicação interativa entre o navegador do usuário e o servidor, criando um canal bidirecional para a comunicação entre eles. Esta tecnologia é a chave para o desenvolvimento de aplicações em tempo real.</p>
+
+<h2 id="websockets-vs-protocolo-http">WebSockets VS Protocolo HTTP</h2>
+<p align = "justify" >A tecnologia de WebSockets veio para satisfazer uma demanda mundial: a <i>instantaneidade</i> das informações. Desta forma, o paradigma "Requisição-Resposta" entre usuário e servidor do HTTP torna-se obsoleto em vista das exigências modernas.</p>
+
+<p align = "justify" >Websockets utilizam um canal para manter a conexão aberta, o <i>Action Cable</i>. Assim, as requisições dos usuários e servidores podem ser efetuadas em tempo real.</p>
+
+<h1 id="dojo-de-linguagem-material-didatico">DOJO de linguagem (material didático)</h1>
+<h2 id="rails-tutorial-michael-hartl">Rails Tutorial - Michael Hartl</h2>
+<blockquote>
+<p>https://www.railstutorial.org/</p>
+</blockquote>
+<h2 id="codecademy">Codecademy</h2>
+<blockquote>
+<h3 id="ruby">Ruby</h3>
+<p>https://www.codecademy.com/pt-BR/learn/ruby</p>
+<h3 id="rails">Rails</h3>
+<p>https://www.codecademy.com/pt-BR/learn/learn-rails</p>
+<h3 id="rails-authentication">Rails Authentication</h3>
+<p>https://www.codecademy.com/pt-BR/learn/rails-auth</p>
+</blockquote>
+<h2 id="caelum">Caelum</h2>
+<blockquote>
+<h3 id="ruby-on-rails">Ruby on Rails</h3>
+<p>https://www.caelum.com.br/apostila-ruby-on-rails/ruby-on-rails/</p>
+<h3 id="ruby-gems">Ruby Gems</h3>
+<p>https://rubygems.org/</p>
+</blockquote>
+<h1 id="dojo-de-testes-material-didatico">DOJO de testes (material didático)</h1>
+<blockquote>
+<h3 id="code-school">Code school</h3>
+<p>https://www.codeschool.com/courses/testing-with-rspec</p>
+<h3 id="usando-o-rspec-para-testar-sua-aplicacao-rails-modelos">Usando o RSpec para testar sua aplicação Rails - Modelos</h3>
+<p>https://nandovieira.com.br/usando-o-rspec-para-testar-sua-aplicacao-rails-modelos</p>
+</blockquote>
+<h1 id="repositorios-educativos">Repositórios educativos</h1>
+<h1 id="material-didatico-produzido-na-disciplina-times-coaches-etc">Material didático produzido na disciplina (times, coaches, etc)</h1></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

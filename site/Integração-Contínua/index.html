@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Integração continua - MDS-EPS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../Home/">MDS-EPS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../Home/">Home</a>
+                    </li>
+                    <li >
+                        <a href="../Projetos----Temas/">Projetos- Temas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disciplinas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Métodos-de-Desenvolvimento-de-Software/">Métodos de Desenvolvimento de Software</a>
+</li>
+                            
+<li >
+    <a href="../Gestão-de-Portfólios-e-Projetos-de-Software/">Gestão de Portfólio e Projetos de Software</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fases Rup e PMBOK <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../RUP-(Rational-Unified-Process)/">RUP (Rational Unified Process.md</a>
+</li>
+                            
+<li >
+    <a href="../01---Fase-Iniciação/">Fase Iniciação</a>
+</li>
+                            
+<li >
+    <a href="../02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/">Fase Elaboração (RUP.md Planejamento(PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/">Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK)</a>
+</li>
+                            
+<li >
+    <a href="../04---Fase-Transição-(RUP),-Finalização-(PMBok)/">Fase Transição (RUP), Finalização (PMBOK)</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Métodos Ágeis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Scrum/">Scrum</a>
+</li>
+                            
+<li >
+    <a href="../Programação-Extrema-(XP)/">Programação Extrema (XP)</a>
+</li>
+                            
+<li >
+    <a href="../Indicadores-Ágeis/">Indicadores Ágeis</a>
+</li>
+                            
+<li >
+    <a href="../Como-pontuar-o-backlog/">Como pontuar o backlog</a>
+</li>
+                            
+<li >
+    <a href="../Como-melhorar-a-comunicação-da-equipe/">Como melhorar a comunicação</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programação Extrema (XP) <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Pair-Programming/">Pair Programming</a>
+</li>
+                            
+<li >
+    <a href="../Test-Driven-Development/">Test Driven Development</a>
+</li>
+                            
+<li >
+    <a href="../Acceptance-Test-Driven-Development-(ATDD)/">Acceptance Test Driven Development (ATDD)</a>
+</li>
+                            
+<li >
+    <a href="../Refactoring/">Refactoring</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Integração continua</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua---Deploy-Contínuo/">Integração Contínua Deploy Contínuo</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">DevOps <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Automações/">Automações</a>
+</li>
+                            
+<li >
+    <a href="../Configuracao-de-ambiente-virtual-utilizando-docker/">Automação de Ambiente com Docker</a>
+</li>
+                            
+<li >
+    <a href="../Docker-Compose/">Orquestração de Containers com Docker Compose</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/">Automação de Ambiente com Vagrant</a>
+</li>
+                            
+<li >
+    <a href="../Deploy-Contínuo/">Deploy Contínuo na Plataforma Heroku</a>
+</li>
+                            
+<li >
+    <a href="../Integração-Contínua-Travis-CI/">Integração Contínua com Travis CI</a>
+</li>
+                            
+<li >
+    <a href="../Colocando-a-aplicação-em-produção-com-NGINX/">Disponibilizando a Aplicação com o Proxy Reverso Nginx</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutoriais <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../Git/">Tutorial Git</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente/">Tutorial de Instalação do Ionic</a>
+</li>
+                            
+<li >
+    <a href="../Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/">Android Integração contínua com Circle CI</a>
+</li>
+                            
+<li >
+    <a href="../Configuração-de-Ambiente-para-React-Native/">Configuração de Ambiente para React Native</a>
+</li>
+                            
+<li >
+    <a href="../Rails/">Tutorial Instalação Ruby on Rails</a>
+</li>
+                            
+<li >
+    <a href="../REST-API-em-Node.js-e-RethinkDB/">Tutorial REST API em Node.js</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-JS/">Teste Automatizado Cucumber JS</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-Cucumber-Rails/">Teste Automatizado Cucumber Rails</a>
+</li>
+                            
+<li >
+    <a href="../Teste-Automatizado-com-Selenium-IDE/">Teste Automatizado com Selenium IDE</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Refactoring/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Integração-Contínua---Deploy-Contínuo/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#integracao-continua">Integração Contínua</a></li>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#controle-de-versao">Controle de Versão</a></li>
+            <li><a href="#testes-automatizados">Testes Automatizados</a></li>
+            <li><a href="#build-automatizado">Build Automatizado</a></li>
+            <li><a href="#vantagens-da-integracao-continua">Vantagens da Integração Contínua</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#integracao-continua-com-o-travis">Integração Contínua com o Travis</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="integracao-continua">Integração Contínua</h1>
+<h2 id="introducao">Introdução</h2>
+<p>&quot;<em>Integração Contínua é uma prática de desenvolvimento de software onde os membros de um time integram seu trabalho frequentemente, geralmente cada pessoa integra pelo menos diariamente  podendo haver múltiplas integrações por dia. Cada integração é verificada por um build automatizado (incluindo testes) para detectar erros de integração o mais rápido possível. Muitos times acham que essa abordagem leva a uma significante redução nos problemas de integração e permite que um time desenvolva software coeso mais rapidamente.</em>&quot; Martin Fowler</p>
+<p>A visão de integração contínua do software é uma prática oriunda do metodologia ágil XP, que visa integrar o código alterado na mesma frequência com que as funcionalidades são desenvolvidas. A implementação desta prática traz o benefício de detectar erros no sistema o mais rápido possível, garantindo maior qualidade no produto final.</p>
+<h2 id="controle-de-versao">Controle de Versão</h2>
+<p>O controle de versão é uma ferramenta crucial para a integração contínua, pelo simples fato de ser uma ferramenta que permite o trabalho colaborativo, onde há compartilhamento de dados entre diversos desenvolvedores que trabalham em conjunto. Para o XP, que tem como premissa o trabalho contínuo e constante, o controle de versão é essencial.</p>
+<p>O controle de versão juntamente com um repositório online permitem ter-se sempre uma versão válida e funcional, e saber quem fez alterações no projeto, e ainda evita que desenvolvedores façam trabalho já feito. Para ferramentas de controle de versão que permitem o trabalho em conjunto temos CVS, <a href="http://www.devmedia.com.br/video-controle-de-versoes-com-subversion-parte-1-conceitos-de-controle-de-versoes-e-gerencia-de-configuracao/16418">Subversion</a>, <a href="http://www.devmedia.com.br/curso/curso-controle-de-versao-com-git/380">Git</a>, entre outros. Utilizando repositórios onlines como por exemplo github, temos juntamente com a ferramenta de versionamento o suporte online para usuários, podendo desde acessar e visualizar um sistema a gerenciá-lo.</p>
+<p>Com o desenvolvedor sempre integrando código, benefícios como restauração de versões anteriores, comparação de código e gestão de alterações são possíveis graças à ferramenta de controle de versão e seu repositório.</p>
+<h2 id="testes-automatizados">Testes Automatizados</h2>
+<p>Uma das vantagens quando se utiliza uma ferramenta de integração contínua reside nos testes automatizados. Uma vez que se conclui uma funcionalidade do sistema e deseja-se integrar estas mudanças à build principal, deve-se antes ter certeza de que essa build está devidamente testada e livre de erros. Porém, somente  este procedimento não garante a integridade do sistema como um todo. Quando se implementa uma ferramenta de integração contínua dentro do seu projeto, tem-se implicitamente a necessidade de que sua build principal esteja sempre íntegra. Isto é possível graças à integração contínua. Na máquina servidora onde está hospedada o ambiente de integração contínua pode-se, e deve-se, implementar o uso de testes automatizados. Sempre que novas alterações são fundidas ao projeto principal, a integração contínua entra em ação e gera uma nova build. Esta nova build então passa por um processo de testes, que irão fazer a análise quanto a integridade da build atual. Se os testes forem bem sucedidos(ou não), a ferramenta de integração gera as respectivas notificações . A esses testes que executam dentro da servidora de integração dão-se o nome de testes automatizados.</p>
+<h2 id="build-automatizado">Build Automatizado</h2>
+<p>O processo de build baseia-se na ideia de compilar, preparar o executável e testar uma aplicação sem a necessidade da intervenção manual de um desenvolvedor. Para tal, é necessário possuir uma estrutura bem organizada do projeto, códigos-fonte independentes de qualquer variável do ambiente de desenvolvimento, modelos para os arquivos de configuração de forma que o build possa ser executado em qualquer ambiente -  desenvolvimento, homologação, teste e produção. Assim, qualquer desenvolvedor poderá executar o script de build garantindo que o processo de validação da funcionalidade implementada será o mesmo aplicado por toda a equipe de desenvolvimento.</p>
+<h2 id="vantagens-da-integracao-continua">Vantagens da Integração Contínua</h2>
+<p>Em equipes que adotam metodologias ágeis como eXtreme Programming, Scrum, dentre outras, a integração contínua é um dos pilares da agilidade, pois ela garante que todo o sistema funcione a cada build, não importando o tamanho da equipe e mesmo diversas partes do código estejam sendo alteradas ao mesmo tempo ela garante sua integridade.
+A grande vantagem da integração contínua consiste no feedback instantâneo. Que funciona da seguinte forma: a cada commit no repositório, o build é feito automaticamente, executando todos os testes de forma automática, detectando falhas e avisando em tempo real os envolvidos no projeto. Dessa forma se algum commit não compilar ou quebrar qualquer um dos testes, a equipe toma conhecimento instantaneamente (através de e-mail, por exemplo, indicando as falhas e o commit causador das mesmas). O que possibilita uma que uma correção seja efetuada o mais rápido possível, fator esse que é fundamental para não propagar erros ao criar novas funcionalidades e refatorar o código.
+De forma simplificada integração contínua é uma forma de trazer segurança em relação a mudanças, você pode fazer modificações sem medo, pois será avisado caso algo saia do esperado.</p>
+<h2 id="referencias">Referencias</h2>
+<p>&lt; <a href="http://www.devmedia.com.br/integracao-continua-uma-introducao-ao-assunto/28002">http://www.devmedia.com.br/integracao-continua-uma-introducao-ao-assunto/28002</a>&gt; Acesso em  23-05-2017</p>
+<ol>
+<li>MARTIN,Fowler. Continuous Integration, 2009. Disponível em: &lt;https://martinfowler.com/articles/continuousIntegration.html&gt;. Acesso em: 23 de maio.2017.</li>
+</ol>
+<p>FLÁVIO, José. <em>Build automático de projetos com Continuum</em>. Disponível em: &lt; <a href="http://www.devmedia.com.br/build-automatico-de-projetos-com-continuum/28914">http://www.devmedia.com.br/build-automatico-de-projetos-com-continuum/28914</a>&gt; Acesso em 23/05/2017 às 20h.</p>
+<p>CAUÊ, Guerra. Integração Contínua e o processo Agile. Disponível em:
+<a href="http://blog.caelum.com.br/integracao-continua/">http://blog.caelum.com.br/integracao-continua/</a>
+Acesso em 23 de maio de 2017.</p>
+<h2 id="integracao-continua-com-o-travis">Integração Contínua com o Travis</h2>
+<p>O seguinte tutorial objetiva exemplicar de maneira clara os passos necessários para implementar o Travis-CI em repositório com o intuito de realizar a integração contínua no mesmo.</p>
+<ol>
+<li>
+<p>Acessar travis-ci.org e fazer fazer cadastro autorizando a vinculação com o GitHub</p>
+</li>
+<li>
+<p>No página de perfil do Travis acesse o '+' para habilitar o travis em um novo repositório</p>
+</li>
+<li>
+<p>Habilite o travis no repositório desejado</p>
+</li>
+<li>
+<p>Na raiz do seu repositório, crie o arquivo .travis.yml</p>
+</li>
+</ol>
+<p>Um exemplo do conteúdo do arquivo é:</p>
+<pre><code class="yml">  language: ruby
+  services:
+  - mysql
+  before_script:
+  - cp 2017.1-SIGS/SIGS/config/database.yml.travis 2017.1-SIGS/SIGS/config/database.yml
+  - mysql -e 'create database myapp_test;' -uroot
+  script:
+  - cd 2017.1-SIGS3/SIGS
+  - bundle install
+  - bundle exec rake db:load_config
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
+  - rake cucumber
+  - bundle exec rspec
+  - rubocop
+  after_sucess:
+  - coveralls push
+  rvm:
+  - 2.3.1
+  notifications:
+    email:
+      recipients:
+      - email@example.com
+  branches:
+    only:
+    - master
+    - /.*/
+</code></pre>
+
+<ul>
+<li><strong>language:</strong> linguagem do projeto<br><a href="https://docs.travis-ci.com/user/languages">Lista das lingagens aceitas pelo Travis</a></li>
+<li>
+<p><strong>services:</strong> serviços que serão utilizados pelo Travis</p>
+</li>
+<li>
+<p><strong>before_script:</strong> comandos que devem ser executados antes de rodar o script</p>
+</li>
+<li>
+<p><strong>script:</strong> comandos para executar os testes</p>
+</li>
+<li>
+<p><strong>after_sucess:</strong> comando a ser executado após a finalização dos testes</p>
+</li>
+<li>
+<p><strong>notifications:</strong> configuração de notificações que podem ser associadas ao Travis.<br><a href="https://docs.travis-ci.com/user/notifications/">Lista de Notificações</a></p>
+</li>
+<li>
+<p><strong>branchs:</strong> definição das branchs em que serão rodado os testes</p>
+</li>
+</ul>
+<hr />
+<p><strong>Equipe</strong>
+  * Bruno Matias 15/0051212
+  * Carlos Aragon 15/0121148
+  * Iasmin Mendes 14/0041940
+  * Wallacy Braz 15/0059329</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script src="../js/base.js"></script>
+        <script src="../search/require.js"></script>
+        <script src="../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

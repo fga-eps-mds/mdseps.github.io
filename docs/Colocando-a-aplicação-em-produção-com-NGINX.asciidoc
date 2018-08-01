@@ -1,0 +1,75 @@
+= Colocando a aplicação em produção com NGINX
+
+Como sabemos softwares feitos com python/Django e node.js/Express, são excelentes em relação a produtividade de produção, mas quando o a aplicação inteira é colcoada em cima dessas tecnologias, a perfomace reduz consideravelmente. Nesse tutorial vamos aprender a como colcoar uma aplicação em produção integrando com NGINX visando o aumento da perfomace da aplicação, atendendo mais usuários com os mesmos recursos. Dessa forma iremos criar dois servidores, proxy server do nginx com Django ou Express e também um servidor static server pelo qual será usado para o processamento de arquivos estáticos. Dessa forma é possível diminuir o número de requisições diretas a aplicação.
+
+== Instalando o NGINX na sua versão mais recente
+
+(Foi utilizado sistema ubuntu na instalação)
+
+Execute os comandos em sequência:
+[source,Bash]
+....
+* sudo apt-get update
+* sudo apt-get sudo apt-get install nginx
+* sudo service nginx start
+* sudo update-rc.d nginx defaults
+....
+
+Os ultimos dois comandos iniciam a aplicação e a definição para executar a aplicação quando o sistema for iniciado, repectivamente.
+
+== Configurando servidor
+
+Agora vamos configurar o NGINX para que ele comece a servir os arquivos estáticos para o própria aplicação, node ou django, não precisar fazer isso. Essas configurações serão realizadas dentro do arquivo principal do ngix, chamado "nginx.conf". No ubuntu a localização dele se encontra: "/etc/nginx/nginx.conf".
+
+Arquivo nginx.conf melhorado--->>>
+
+[source, nginx.conf]
+....
+worker_processes 1;
+events {
+  worker_connections 1024;
+}
+http {
+  include mime.types;
+  default_type application/octet-stream;
+  sendfile on;
+  keepalive_timeout 65;
+  gzip on;
+
+  server {
+	listen 80;
+	server_name localhost;
+	access_log logs/access.log;
+
+	location /static {
+	  root /meuapp/public;
+	  expires max;
+	}
+	location / {
+	  proxy_pass http://localhost:3000;
+    }
+  }
+}
+....
+
+Para melhorar a perfomace habilitamos o gzip, em "gzip on", os arquivos vão compactados para o cliente e lá são descompactados, a performace da aplicação como um todo é melhorada visto que GZIP consegue em média reduzir o tamanho dos arquivos estáticos em 50%. O servidor conseguirá atender mais usuários com a mesma largura de banda.
+
+Em "location /static{" definimos a rota dos arquivos estáticos da aplicação. No caso "/static" será o caminho no site para os arquivos estáticos e em "root" será o caminho absoluto dentro da maquina para os arquivos estáticos. Dentro do location também é colocado "expires max" um cache simples.
+
+[source, nginx.conf]
+....
+location / {
+  proxy_pass http://localhost:3000;
+}
+....
+
+No último location, o location /, vai para a raiz da aplicação sendo ela um proxy da nossa aplicação, node.js ou python, que está rodando em localhost:3000.
+
+Mas então quer dizer que se eu quiser rodar a aplicação em um servidor e os arquivos estáticos em outro eu posso?
+Sim, pode! Inclusive pode se fazer isso para aumentar ainda mais a perfomace do servidor e atenter mais usuários.
+
+== Referências
+
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts [How to install NGINX on ubuntu]
+https://udgwebdev.com/nginx-servindo-nodejs [NGINX servindo nodejs]
+http://blog.thiagobelem.net/habilitando-gzip-em-servidores-nginx [Habilitando Gzip]

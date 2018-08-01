@@ -1,0 +1,88 @@
+site_name: MDS-EPS
+theme: simplex
+
+pages:
+  # Seja Bem-vindo!
+  - Home: index.md
+
+  - Projetos- Temas: Projetos----Temas.md
+
+  - Disciplinas:
+
+    - Métodos de Desenvolvimento de Software: Métodos-de-Desenvolvimento-de-Software.md
+
+    - Gestão de Portfólio e Projetos de Software: Gestão-de-Portfólios-e-Projetos-de-Software.md
+
+  - Fases Rup e PMBOK:
+
+    - RUP (Rational Unified Process.md: RUP-(Rational-Unified-Process).md
+
+    - Fase Iniciação: 01---Fase-Iniciação.md
+
+    - Fase Elaboração (RUP.md Planejamento(PMBOK): 02---Fase-Elaboração-(RUP)-Planejamento-(PMBok).md
+
+    - Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK): 03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok).md
+
+    - Fase Transição (RUP), Finalização (PMBOK): 04---Fase-Transição-(RUP),-Finalização-(PMBok).md
+
+  - Métodos Ágeis:
+
+    - Scrum: Scrum.md
+
+    - Programação Extrema (XP): Programação-Extrema-(XP).md
+
+    - Indicadores Ágeis: Indicadores-Ágeis.md
+
+    - Como pontuar o backlog: Como-pontuar-o-backlog.md
+
+    - Como melhorar a comunicação: Como-melhorar-a-comunicação-da-equipe.md
+
+  - Programação Extrema (XP):
+
+    - Pair Programming: Pair-Programming.md
+
+    - Test Driven Development: Test-Driven-Development.md
+
+    - Acceptance Test Driven Development (ATDD): Acceptance-Test-Driven-Development-(ATDD).md
+
+    - Refactoring: Refactoring.md
+
+    - Integração continua: Integração-Contínua.md
+
+    - Integração Contínua Deploy Contínuo: Integração-Contínua---Deploy-Contínuo.md
+
+  - DevOps:
+
+    - Automações: Automações.md
+
+    - Automação de Ambiente com Docker: Configuracao-de-ambiente-virtual-utilizando-docker.md
+
+    - Orquestração de Containers com Docker Compose: Docker-Compose.md
+
+    - Automação de Ambiente com Vagrant: Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant.md
+
+    - Deploy Contínuo na Plataforma Heroku: Deploy-Contínuo.md
+
+    - Integração Contínua com Travis CI: Integração-Contínua-Travis-CI.md
+
+    - Disponibilizando a Aplicação com o Proxy Reverso Nginx: Colocando-a-aplicação-em-produção-com-NGINX.asciidoc
+
+  - Tutoriais:
+
+    - Tutorial Git: Git.md
+
+    - Tutorial de Instalação do Ionic: Configuração-de-Ambiente.md
+
+    - Android Integração contínua com Circle CI: Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated).md
+
+    - Configuração de Ambiente para React Native: Configuração-de-Ambiente-para-React-Native.md
+
+    - Tutorial Instalação Ruby on Rails: Rails.md
+
+    - Tutorial REST API em Node.js: REST-API-em-Node.js-e-RethinkDB.md
+
+    - Teste Automatizado Cucumber JS: Teste-Automatizado-Cucumber-JS.md
+
+    - Teste Automatizado Cucumber Rails: Teste-Automatizado-Cucumber-Rails.md
+
+    - Teste Automatizado com Selenium IDE: Teste-Automatizado-com-Selenium-IDE.md
