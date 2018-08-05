@@ -1,183 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>/Home/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Projetos----Temas/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Métodos-de-Desenvolvimento-de-Software/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Gestão-de-Portfólios-e-Projetos-de-Software/</loc>
-     <lastmod>2018-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/RUP-(Rational-Unified-Process)/</loc>
-     <lastmod>2018-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/01---Fase-Iniciação/</loc>
-     <lastmod>2018-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/02---Fase-Elaboração-(RUP)-Planejamento-(PMBok)/</loc>
-     <lastmod>2018-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok)/</loc>
-     <lastmod>2018-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/04---Fase-Transição-(RUP),-Finalização-(PMBok)/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Scrum/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Programação-Extrema-(XP)/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Indicadores-Ágeis/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Como-pontuar-o-backlog/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Como-melhorar-a-comunicação-da-equipe/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Pair-Programming/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Test-Driven-Development/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Acceptance-Test-Driven-Development-(ATDD)/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Refactoring/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Integração-Contínua/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Integração-Contínua---Deploy-Contínuo/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Automações/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Configuracao-de-ambiente-virtual-utilizando-docker/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Docker-Compose/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Configuração-de-um-ambiente-virtual-utilizando-o-Vagrant/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Deploy-Contínuo/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Integração-Contínua-Travis-CI/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Colocando-a-aplicação-em-produção-com-NGINX/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Git/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Configuração-de-Ambiente/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Android---Circle-Continuous-Integration-(Unit-Tests,-UI-Tests,-Coverage-build-pass-rule,-beta-deploy-and-production-deploy-automated)/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Configuração-de-Ambiente-para-React-Native/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Rails/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/REST-API-em-Node.js-e-RethinkDB/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Teste-Automatizado-Cucumber-JS/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Teste-Automatizado-Cucumber-Rails/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Teste-Automatizado-com-Selenium-IDE/</loc>
-     <lastmod>2018-08-01</lastmod>
+     <lastmod>2018-08-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

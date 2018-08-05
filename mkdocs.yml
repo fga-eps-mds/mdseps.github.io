@@ -5,7 +5,7 @@ pages:
   # Seja Bem-vindo!
   - Home: index.md
 
-  - Projetos- Temas: Projetos----Temas.md
+  - Temas: Projetos----Temas.md
 
   - Disciplinas:
 
@@ -13,17 +13,17 @@ pages:
 
     - Gestão de Portfólio e Projetos de Software: Gestão-de-Portfólios-e-Projetos-de-Software.md
 
-  - Fases Rup e PMBOK:
-
-    - RUP (Rational Unified Process.md: RUP-(Rational-Unified-Process).md
-
-    - Fase Iniciação: 01---Fase-Iniciação.md
-
-    - Fase Elaboração (RUP.md Planejamento(PMBOK): 02---Fase-Elaboração-(RUP)-Planejamento-(PMBok).md
-
-    - Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK): 03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok).md
-
-    - Fase Transição (RUP), Finalização (PMBOK): 04---Fase-Transição-(RUP),-Finalização-(PMBok).md
+  # - Fases Rup e PMBOK:
+  #
+  #   - RUP (Rational Unified Process.md: RUP-(Rational-Unified-Process).md
+  #
+  #   - Fase Iniciação: 01---Fase-Iniciação.md
+  #
+  #   - Fase Elaboração (RUP.md Planejamento(PMBOK): 02---Fase-Elaboração-(RUP)-Planejamento-(PMBok).md
+  #
+  #   - Fase de Construção (RUP), Execução/Monitoramente e Controle (PMBOK): 03---Fase-de-Construção-(RUP),-Monitoramente-e-Controle-(PMBok).md
+  #
+  #   - Fase Transição (RUP), Finalização (PMBOK): 04---Fase-Transição-(RUP),-Finalização-(PMBok).md
 
   - Métodos Ágeis:
 
