@@ -1,5 +1,8 @@
 site_name: MDS-EPS
-theme: simplex
+theme: material
+
+markdown_extensions:
+  - admonition
 
 pages:
   # Seja Bem-vindo!
