@@ -1,4 +1,47 @@
 # Projetos MDS/EP:
+
+## 2018.2 
+
+Os temas serão avaliados/apresentados na segunda aula do semestre para aprovação do projeto.
+
+As áreas de interesse são:
+* Data science
+* Processamento distribuido
+* Processamento de imagem
+* Processamento de Linguagem Natural (PLN)
+
+Temas disponíveis (só serão aceitos os temas propostos na disciplina):
+
+- [ ] PDF2knowledge (3 Grupos) + HTML2KNowledge -- até 3 grupos
+
+PDF2knowledge é uma ferramenta para extrair informação a partir de arquivos pdf. Possui os seguintes produtos:
+1 - Modulo processamento de pdfs nativos - tem seu próprio package Python  que:
+(a) identifica se o arquivo pdf eh nativo (b) extrai informações do arquivo (c) processa o texto do pdf e extrai conteúdo
+
+2 - modulo processamento de pdf escaneados - tem seu próprio package Python que
+(a) identifica se o arquivo pdf eh escaneado, (b) identifica se o arquivo digitalizado tem escrito à Mao, caso contrario
+ (c) faz pré processamento de imagem para melhorar a qualidade do arquivo , (d) extrai informações do arquivo
+
+3 - modulo de processamento de pdf escaneados à Mao - tem seu próprio package Python que
+(a) identifica se o arquivo pdf eh escaneado, (b) identifica se o arquivo digitalizado tem escrito à Mao
+ (c) treinamento deep Learning aplicado para extrair informações do arquivo  
+
+Todos os módulos serão disponibilizados também via  API e um serviço para consumir (prova de conceito) 
+
+
+Fonte de dados(357677 arquivos pdfs): sudo pip3 install salic-receipt
+
+
+- [ ] Dataviz (até 3 grupos)
+
+- Gerar visualizacoes a partir de indicadores/metricas. (json)
+- Processamento de linguagem natural… extração do conteúdo principal 
+- Similaridade de documento (como fazer)
+- Grafo de relacionamento de documentos (por similaridade de conteudo)
+
+
+
+
 ## 2018.1 Uso de conceitos de Data Science
 
 <p align="justify"> A disciplina MDS/GPP terá tema único: Data Science. Os temas serão avaliados/apresentados na segunda aula do semestre para aprovação do projeto.</p> 
