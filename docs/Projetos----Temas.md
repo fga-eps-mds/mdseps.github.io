@@ -39,9 +39,31 @@ Fonte de dados(357677 arquivos pdfs): sudo pip3 install salic-receipt
 - Similaridade de documento (como fazer)
 - Grafo de relacionamento de documentos (por similaridade de conteudo)
 
+- [ ] App utilidades FGA - Proteja meu carro Unb (2 grupos)
+
+* cadastro de carro
+* reconhecimento de placas (checkin)
+* app de monitoramento 
+* BI de comportamento
+
+- [ ] App utilidades FGA - ifood (1 grupo)
+* cadastro de vendedores
+* comunicaçao entre vendedores/clientes
+* pedidos
+* compartilhar localizaçao  ( ideia. uber beta)
 
 
+- [ ] App utilidades FGA - Bot FGA (1 grupo)
+* Canais de comunicacao com o processo
+* bots de requisição adm
+* bots de requisicoes academicas
+* log
+* dashboard de serviços
+* BI
 
+- [ ]  Projeto X MDIC (1 GRUPO)
+
+- [ ] Projeto Y MPOG (1 GRUPO)
 ## 2018.1 Uso de conceitos de Data Science
 
 <p align="justify"> A disciplina MDS/GPP terá tema único: Data Science. Os temas serão avaliados/apresentados na segunda aula do semestre para aprovação do projeto.</p> 
