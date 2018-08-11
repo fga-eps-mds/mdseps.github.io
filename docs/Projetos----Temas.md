@@ -64,6 +64,8 @@ Fonte de dados(357677 arquivos pdfs): sudo pip3 install salic-receipt
 - [ ]  Projeto X MDIC (1 GRUPO)
 
 - [ ] Projeto Y MPOG (1 GRUPO)
+
+- [ ] BI do mercado de Jogos (1 grupo)
 ## 2018.1 Uso de conceitos de Data Science
 
 <p align="justify"> A disciplina MDS/GPP terá tema único: Data Science. Os temas serão avaliados/apresentados na segunda aula do semestre para aprovação do projeto.</p> 
